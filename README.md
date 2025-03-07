@@ -2,7 +2,7 @@
 
 _**Welcome**_
 
-Hola, bienvenido y bienvenida a este espacio, mi nombre es Alberto David López, y espero que todo lo que encuentres aquí te sea de utilidad. Y que cualquier duda que tengas relacionada con el mismo, puedes contactar conmigo por cualquiera de mis redes sociales.
+Hola, bienvenido y bienvenida a este espacio, mi nombre es **Alberto David López**, y espero que todo lo que encuentres aquí te sea de utilidad. Y que cualquier duda que tengas relacionada con el mismo, puedes contactar conmigo por cualquiera de mis redes sociales.
 
 _**Whoami**_
 
