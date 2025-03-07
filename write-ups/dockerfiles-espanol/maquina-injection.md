@@ -4,6 +4,8 @@ description: 'Dificultad: Muy fácil'
 
 # Máquina INJECTION
 
+Fecha: 07 de Marzo de 2025
+
 Esta máquina la podemos encontrar en la web de [**DockerLabs**](https://dockerlabs.es/), perteneciente a ["El Pingüino de Mario"](https://www.youtube.com/channel/UCGLfzfKRUsV6BzkrF1kJGsg), que está categorizada como "muy fácil" y que he decido comenzar por ella.
 
 Como una de las cosas mas importantes dentro de una auditoría informática ya sea de ciberseguridad o no, es la enumeración de lo que vayamos descubriendo, se hace indispensable disponer de una enumeración adecuada a los hechos que se van produciendo.
@@ -30,7 +32,15 @@ Una vez instalado Docker en esta máquina virtual, termina por decirnos la direc
 
 <figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Despliegue de la máquina en nuestra terminal</p></figcaption></figure>
 
-Ok, nos abrimos una terminal y lanzamos un comando contra la máquina para comprobar si nos responde.
+Una vez que ya hemos terminado y nos ha lanzado la dirección IP de la máquina que acabamos de desplegar, procedemos a comenzar con nuestra operativa.
+
+
+
+**Fase de Reconocimiento**
+
+En esta fase lo mas importante es obtener la mayor enumeración de información disponible acerca de nuestro objetivo.&#x20;
+
+Ahora nos abrimos una terminal y lanzamos un comando contra la máquina para comprobar si nos responde.
 
 ```bash
 ping 172.17.0.2
@@ -42,9 +52,8 @@ Podemos ver que nos está retornando paquetes ICMP, así que está encendida.
 
 Ahora lanzaremos un comando nmap para comenzar con la enumeración de servicios, y puertos que tiene disponibles esta maquina.
 
-```bash
-nmap -sV 172.17.0.2
-```
+<pre class="language-bash"><code class="lang-bash"><strong>nmap -sV 172.17.0.2
+</strong></code></pre>
 
 <figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
@@ -65,5 +74,24 @@ Hemos intentado conectarnos por SSH y tampoco hemos conseguido entrar, dado que 
 
 Ok, podemos probar con la herramienta **DirBuster**, pero no logro hacerla funcionar.
 
+Parece que me estoy desviando del camino. Puede que si realizo una _**SQL Injection,**_ vamos a probar con la inyección SQL clásica para intentar entrar por este método introduciendo _"**admin' or 1=1-- -**"_ para que siempre sea verdadero, y cualquier cosa en la _**password**_.
 
+<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
+Y _vualá_, acabamos de acceder al sistema. Vemos como la web nos entrega un mensaje de bienvenida para el usuario Dylan. Y nos revela la contraseña del mismo.
+
+<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+
+Podría ser que esa contraseña sirva para entrar por la consola SSH, y así poder hacer una escalada de privilegios y ya entrar hasta en la cocina...
+
+```bash
+ssh dylan@172.17.0.2
+```
+
+Ponemos la contraseña que hemos encontrado y...
+
+<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+
+Acabamos de obtener acceso a la máquina.
+
+Fin de la auditoría.
