@@ -10,9 +10,7 @@ Esta máquina la podemos encontrar en la web de [**DockerLabs**](https://dockerl
 
 Como una de las cosas mas importantes dentro de una auditoría informática ya sea de ciberseguridad o no, es la enumeración de lo que vayamos descubriendo, se hace indispensable disponer de una enumeración adecuada a los hechos que se van produciendo.
 
-
-
-**Paso Cero**
+## Descargar e instalar máquina de prueba
 
 Activada la VPN a Suiza, con una máquina virtual Kali Linux, nos vamos a la web de DockerLabs del Pingüino de Mario, y nos descargamos la primera máquina modo "Muy Fácil" que nos encontramos.
 
@@ -36,7 +34,7 @@ Una vez que ya hemos terminado y nos ha lanzado la dirección IP de la máquina 
 
 
 
-**Fase de Reconocimiento**
+## **Fase de Reconocimiento**
 
 En esta fase lo mas importante es obtener la mayor enumeración de información disponible acerca de nuestro objetivo.&#x20;
 
@@ -48,14 +46,16 @@ ping 172.17.0.2
 
 Podemos ver que nos está retornando paquetes ICMP, así que está encendida.
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Ping a la máquina víctima</p></figcaption></figure>
 
 Ahora lanzaremos un comando nmap para comenzar con la enumeración de servicios, y puertos que tiene disponibles esta maquina.
 
 <pre class="language-bash"><code class="lang-bash"><strong>nmap -sV 172.17.0.2
 </strong></code></pre>
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption><p>Nmap averiguando que servicios están disponibles</p></figcaption></figure>
+
+## Fase de Explotación
 
 Hemos encontrado los siguientes puertos:&#x20;
 
@@ -74,13 +74,23 @@ Hemos intentado conectarnos por SSH y tampoco hemos conseguido entrar, dado que 
 
 Ok, podemos probar con la herramienta **DirBuster**, pero no logro hacerla funcionar.
 
+### SQL Injection
+
 Parece que me estoy desviando del camino. Puede que si realizo una _**SQL Injection,**_ vamos a probar con la inyección SQL clásica para intentar entrar por este método introduciendo _"**admin' or 1=1-- -**"_ para que siempre sea verdadero, y cualquier cosa en la _**password**_.
 
-<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption><p>Probando la inyección SQL</p></figcaption></figure>
 
-Y _vualá_, acabamos de acceder al sistema. Vemos como la web nos entrega un mensaje de bienvenida para el usuario Dylan. Y nos revela la contraseña del mismo.
+Y _vuala_, acabamos de acceder al sistema. Vemos como la web nos entrega un mensaje de bienvenida para el usuario Dylan. Y nos revela la contraseña del mismo.
 
-<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+```bash
+                             | |
+  _____      ___ __   ___  __| |
+ / _ \ \ /\ / / '_ \ / _ \/ _` |
+| (_) \ V  V /| | | |  __/ (_| |
+ \___/ \_/\_/ |_| |_|\___|\__,_|
+```
+
+## Fase de Post-Explotación
 
 Podría ser que esa contraseña sirva para entrar por la consola SSH, y así poder hacer una escalada de privilegios y ya entrar hasta en la cocina...
 
