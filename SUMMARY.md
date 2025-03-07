@@ -1,6 +1,6 @@
 # Table of contents
 
-* [🌎 Welcome to my place](README.md)
+* [🌎 Welcome](README.md)
 
 ## WRITE-UPS
 
