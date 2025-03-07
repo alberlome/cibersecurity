@@ -18,17 +18,17 @@ Una vez que estamos en la consola de Kali Linux, nos creamos abrimos un Terminal
 
 Abrimos la ruta de la carpeta, descomprimimos el fichero ZIP y tenemos dos ficheros.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Extracción del fichero zip</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Extracción del fichero zip</p></figcaption></figure>
 
 Ahora modificaremos los permisos de la máquina para que disponga de permisos de ejecución y la ejecutaremos en nuestra Terminal.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Ejecución de la máquina en nuestro Docker local</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Ejecución de la máquina en nuestro Docker local</p></figcaption></figure>
 
 Una vez ejecutada, como no tenemos Docker lo primero que hace es instalarlo.
 
 Una vez instalado Docker en esta máquina virtual, termina por decirnos la dirección IP de la máquina que acabamos de desplegar y su dirección IP, para acceder a ella.
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Despliegue de la máquina en nuestra terminal</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Despliegue de la máquina en nuestra terminal</p></figcaption></figure>
 
 Una vez que ya hemos terminado y nos ha lanzado la dirección IP de la máquina que acabamos de desplegar, procedemos a comenzar con nuestra operativa.
 
@@ -82,14 +82,6 @@ Parece que me estoy desviando del camino. Puede que si realizo una _**SQL Inject
 
 Y _vuala_, acabamos de acceder al sistema. Vemos como la web nos entrega un mensaje de bienvenida para el usuario Dylan. Y nos revela la contraseña del mismo.
 
-```bash
-                             | |
-  _____      ___ __   ___  __| |
- / _ \ \ /\ / / '_ \ / _ \/ _` |
-| (_) \ V  V /| | | |  __/ (_| |
- \___/ \_/\_/ |_| |_|\___|\__,_|
-```
-
 ## Fase de Post-Explotación
 
 Podría ser que esa contraseña sirva para entrar por la consola SSH, y así poder hacer una escalada de privilegios y ya entrar hasta en la cocina...
@@ -100,8 +92,30 @@ ssh dylan@172.17.0.2
 
 Ponemos la contraseña que hemos encontrado y...
 
-<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<div align="left"><figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure></div>
+
+Buscamos los ficheros con permisos de usuario root
+
+```
+find / -perm -4000 -user root 2>/dev/null
+```
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 Acabamos de obtener acceso a la máquina.
 
+```
+sudo env /bin/sh
+```
+
+<div align="left"><figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure></div>
+
 Fin de la auditoría.
+
+```bash
+                             | |
+  _____      ___ __   ___  __| |
+ / _ \ \ /\ / / '_ \ / _ \/ _` |
+| (_) \ V  V /| | | |  __/ (_| |
+ \___/ \_/\_/ |_| |_|\___|\__,_|
+```
