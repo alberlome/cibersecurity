@@ -3,13 +3,7 @@ description: >-
   Transformar y personalizar todo el ecosistema relacionado con la parte visual
   y funciona de Kali Linux para adecuarlo a una mejor productividad en el
   trabajo de pentesting.
-cover: >-
-  https://images.unsplash.com/photo-1584949091598-c31daaaa4aa9?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHw5fHxjb2RlfGVufDB8fHx8MTc0MTM1MzE1NHww&ixlib=rb-4.0.3&q=85
-coverY: 0
 layout:
-  cover:
-    visible: true
-    size: full
   title:
     visible: true
   description:
