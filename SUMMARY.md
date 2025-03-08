@@ -6,6 +6,8 @@
 
 * [🐳 DockerFiles (Español)](write-ups/dockerfiles-espanol/README.md)
   * [Máquina INJECTION](write-ups/dockerfiles-espanol/maquina-injection.md)
+* [👽 Exámen eJPTv2](write-ups/examen-ejptv2/README.md)
+  * [Laboratorio Xerosec eJPTv2](write-ups/examen-ejptv2/laboratorio-xerosec-ejptv2.md)
 
 ## Herramientas
 
