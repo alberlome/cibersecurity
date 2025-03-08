@@ -10,31 +10,7 @@ Objetivo: 172.17.0.2
 
 ***
 
-Esta máquina la podemos encontrar en la web de [**DockerLabs**](https://dockerlabs.es/), perteneciente a ["El Pingüino de Mario"](https://www.youtube.com/channel/UCGLfzfKRUsV6BzkrF1kJGsg), que está categorizada como "muy fácil" y que he decido comenzar por ella.
 
-Como una de las cosas mas importantes dentro de una auditoría informática ya sea de ciberseguridad o no, es la enumeración de lo que vayamos descubriendo, se hace indispensable disponer de una enumeración adecuada a los hechos que se van produciendo.
-
-## Descargar e instalar máquina de prueba
-
-Activada la VPN a Suiza, con una máquina virtual Kali Linux, nos vamos a la web de DockerLabs del Pingüino de Mario, y nos descargamos la primera máquina modo "Muy Fácil" que nos encontramos.
-
-Una vez que estamos en la consola de Kali Linux, nos creamos abrimos un Terminal, nos copiamos la máquina que nos hemos descargado recientemente (llamada "injection") y la pegamos en nuestra carpeta de trabajo.
-
-Abrimos la ruta de la carpeta, descomprimimos el fichero ZIP y tenemos dos ficheros.
-
-<div align="left" data-full-width="false"><figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption><p>Extracción del fichero zip</p></figcaption></figure></div>
-
-Ahora modificaremos los permisos de la máquina para que disponga de permisos de ejecución y la ejecutaremos en nuestra Terminal.
-
-<div align="left"><figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption><p>Ejecución de la máquina en nuestro Docker local</p></figcaption></figure></div>
-
-Una vez ejecutada, como no tenemos Docker lo primero que hace es instalarlo.
-
-Una vez instalado Docker en esta máquina virtual, termina por decirnos la dirección IP de la máquina que acabamos de desplegar y su dirección IP, para acceder a ella.
-
-<div align="left"><figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption><p>Despliegue de la máquina en nuestra terminal</p></figcaption></figure></div>
-
-Una vez que ya hemos terminado y nos ha lanzado la dirección IP de la máquina que acabamos de desplegar, procedemos a comenzar con nuestra operativa.
 
 
 
