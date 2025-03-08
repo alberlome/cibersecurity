@@ -43,5 +43,7 @@
 * [Ataques de diccionario](herramientas/ataques-de-diccionario/README.md)
   * [Xhtdra](herramientas/ataques-de-diccionario/xhtdra.md)
   * [Metasploit](herramientas/ataques-de-diccionario/metasploit.md)
+* [Fuerza bruta](herramientas/fuerza-bruta/README.md)
+  * [Hydra](herramientas/fuerza-bruta/hydra.md)
 
 ## SETUPS
