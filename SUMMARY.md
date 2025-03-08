@@ -4,9 +4,9 @@
 
 ## WRITE-UPS
 
-* [🐳 DockerFiles (Español)](write-ups/dockerfiles-espanol/README.md)
-  * [Máquina INJECTION](write-ups/dockerfiles-espanol/maquina-injection.md)
-  * [Máquina TRUST](write-ups/dockerfiles-espanol/maquina-trust.md)
+* [🐳 DockerLabs (Español)](write-ups/dockerlabs-espanol/README.md)
+  * [Máquina INJECTION](write-ups/dockerlabs-espanol/maquina-injection.md)
+  * [Máquina TRUST](write-ups/dockerlabs-espanol/maquina-trust.md)
 * [👽 Exámen eJPTv2](write-ups/examen-ejptv2/README.md)
   * [Laboratorio Xerosec eJPTv2](write-ups/examen-ejptv2/laboratorio-xerosec-ejptv2.md)
 
