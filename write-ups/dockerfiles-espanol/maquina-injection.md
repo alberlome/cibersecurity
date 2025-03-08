@@ -10,10 +10,6 @@ Objetivo: 172.17.0.2
 
 ***
 
-
-
-
-
 ## **Fase de Reconocimiento**
 
 En esta fase lo mas importante es obtener la mayor enumeración de información disponible acerca de nuestro objetivo.&#x20;
@@ -34,6 +30,8 @@ Ahora lanzaremos un comando nmap para comenzar con la enumeración de servicios,
 </strong></code></pre>
 
 <div align="left"><figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption><p>Nmap averiguando que servicios están disponibles</p></figcaption></figure></div>
+
+***
 
 ## Fase de Explotación
 
@@ -61,6 +59,8 @@ Parece que me estoy desviando del camino. Puede que si realizo una _**SQL Inject
 <div align="left"><figure><img src="../../.gitbook/assets/image (9) (1).png" alt=""><figcaption><p>Probando la inyección SQL</p></figcaption></figure></div>
 
 Y _vuala_, acabamos de acceder al sistema. Vemos como la web nos entrega un mensaje de bienvenida para el usuario Dylan. Y nos revela la contraseña del mismo.
+
+***
 
 ## Fase de Post-Explotación
 
