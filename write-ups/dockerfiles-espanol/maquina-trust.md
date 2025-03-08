@@ -105,7 +105,9 @@ hydra -l mario -P /usr/share/wordlists/metasploit/unix_passwords.txt -t 6 ssh://
 
 <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Resultados del ataque al objetivo con Hydra</p></figcaption></figure>
 
-Fase de Post-Explotación
+***
+
+## Fase de Post-Explotación
 
 Una vez obtenidas las credenciales del usuario. Podemos acceder a la máquina objetivo mediante SSH.
 
