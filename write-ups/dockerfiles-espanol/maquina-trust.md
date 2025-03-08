@@ -4,7 +4,7 @@ description: 'Dificultad: Muy fácil'
 
 # Máquina TRUST
 
-Fecha: 07 de Marzo de 2025
+Fecha: 08 de Marzo de 2025
 
 Objetivo: 172.18.0.2
 
