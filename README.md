@@ -26,7 +26,7 @@ Disfruto resolviendo problemas, investigando vulnerabilidades y ayudando a otros
 
 ***
 
-> ## "_Embrace the unknown and find your own path..._"
+> ### "_Embrace the unknown and find your own path..._"
 
 ***
 
