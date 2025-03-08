@@ -15,29 +15,6 @@ Recoleccion
 - Wafw00f
 - lbd
 - Hunter
-
-Directorios ocultos
-- Dirb
-- Dirsearch
-
-Escaneo protocolos y servicios
-- nmap
-
-Escaneo de vulns
-- nmap
-- Acunetix
-- Nessus
-- Nuclei
-- Burp pro
-- ZAp
-
-Análisis de Aplicaicones
-- Burp
-- ffuzz
-
-Ataques diccionario
-- xhtdra
-- metasploit
 ```
 
 \
