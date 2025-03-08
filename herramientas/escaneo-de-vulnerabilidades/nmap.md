@@ -116,8 +116,6 @@ Establecer la bandera **--**_**unprivileged**_ hará que **nmap** se ejecute asu
 
 La mejor solución para esto es ejecutar tu máquina virtual en **modo puente (**_**bridged**_ _**mode**_**)** al realizar este escaneo para obtener resultados más precisos.
 
-
-
 ### Descubrimientos de Hosts: List Scan
 
 ```
@@ -126,3 +124,118 @@ $ sudo nmap -sL 10.20.30.0/24
 
 Esto no es tan fiable porque no envía ningún paquete a los hosts de destino. Solo realiza búsquedas inversas en el servidor de nombres sobre las direcciones IP. Aun así, sigue siendo bastante encubierto, ya que no estás enviando paquetes a los hosts individuales, solo negociando con un servidor de nombres.
 
+
+
+## **Banderas mas usadas**
+
+### Detectar Sistema Operativo
+
+```
+$ sudo nmap -O 10.20.30.40
+```
+
+Esto realiza una inspección a nivel bastante bajo para determinar el sistema operativo del objetivo. Es un poco más detallado que las diferencias estándar de TTL entre Linux y Windows (el TTL de los paquetes en Linux comienza en 64, mientras que en Windows comienza en 128). También intenta realizar alguna negociación con el objetivo para determinar la previsibilidad de la secuencia TCP, lo que puede usarse para identificar ciertas versiones de un sistema operativo. Evidentemente, también es posible estimar el tiempo de actividad del objetivo observando la opción de marca de tiempo TCP, pero esto solo es visible al agregar la bandera -v de modo detallado.
+
+### Escaneo rápido
+
+```
+$ sudo nmap --min-rate 10000 10.20.30.40
+```
+
+Usa esto con moderación. Si quieres enviar paquetes al objetivo lo más rápido posible, ajusta el valor de --min-rate a algo alto, como 10,000. Esto enviará al menos 10,000 paquetes al objetivo por segundo (posiblemente más rápido), por lo que hacerlo tan alto aumentará los falsos positivos (o falsos negativos). Úsalo solo si sabes que la red no está tan congestionada o tiene una cantidad razonable de ancho de banda. Esto no es necesario a menos que tengas prisa o algo similar. Igualmente, puedes especificar --max-rate 1 para enviar un paquete por segundo, o 0.1 para enviar un paquete cada 10 segundos, etc., para ser lento y pausado.
+
+### Mejor forma de aumentar/disminuir la velocidad
+
+```
+$ sudo nmap -T 0 10.20.30.40
+```
+
+Puedes usar la bandera -T y elegir un número del 0 al 5 para establecer una plantilla de tiempo. Esto es equivalente a configurar unas 10 banderas diferentes para especificar tiempos de ida y vuelta, paralelismo, retrasos de escaneo y reintentos (entre otras cosas). Una plantilla de tiempo de 0 será "paranoica", lo que será extremadamente lenta, operando bajo el radar tanto como sea posible a costa de tiempo, y una plantilla de 5 será extremadamente rápida y agresiva, lo que podría causar problemas en el host objetivo. Se debe tener precaución de no usar una plantilla de tiempo de 5 a menos que estés dispuesto a aceptar que el resultado final sea una denegación total de servicio, pero entre tú, yo y el farol, si tu host se cae después de un escaneo rápido con nmap, mi opinión experta es que no tiene ningún derecho a estar disponible en ninguna red desde el principio. Como referencia, una plantilla de tiempo de 3 es la plantilla de escaneo por defecto.
+
+### Acortar el Ippsec Special <a href="#shorten-the-ippsec-special" id="shorten-the-ippsec-special"></a>
+
+```
+$ sudo nmap -A 10.20.30.40
+```
+
+Esto realizará una verificación de versión, escaneo de scripts por defecto, detección de sistema operativo y realizará un traceroute mientras lo hace. Claro, puedes usar esto en lugar de cualquiera de las otras cosas que mencioné antes.
+
+### Logging
+
+```
+$ sudo nmap -oA portscan 10.20.30.40
+```
+
+Hay varios formatos a los que puedes exportar. -oA exporta a los tres principales, que son salida normal (-oN), en formato que se puede buscar con grep (-oG) y XML (-oX). Proporciónale un nombre de archivo y creará 3 archivos con diferentes extensiones. Por supuesto, un agradecimiento a -oS filename, que exporta en formato script.
+
+### Resolución de DNS
+
+```
+$ sudo nmap -Pn 10.20.30.40
+```
+
+Si sabes con certeza que el host está en línea pero no responde a los pings, usa la bandera -Pn para omitir el descubrimiento estándar del host e intentar escanear de la manera tradicional. Esto saltará el primer paso de determinar si el host está realmente activo. Si no incluyes esto, lo primero que hará nmap será sus comprobaciones estándar de "¿estás vivo?" para determinar si el host está activo. Si falla esas comprobaciones, asumirá que el host está caído y no continuará con el escaneo. Sin embargo, algunos hosts bloquearán directamente los paquetes ICMP y solo abrirán los puertos que necesitan. En ese caso, agregarías esta bandera para deshabilitar las comprobaciones y asumir que el host está activo de todos modos. Luego intentará conectarse a los puertos a los que normalmente se conecta y determinar qué está escuchando.
+
+### Escaneo de Nmap a través de un proxy
+
+```
+$ sudo nmap -sT --proxy socks4://40.40.50.50:5789 10.20.30.40
+```
+
+Suponiendo que tienes un proxy socks4 escuchando en 40.40.50.50:5789, esto intentará canalizar toda la comunicación a través del proxy para llegar al lado remoto. Ten en cuenta que solo puedes usar escaneos TCP a través de aquí debido a la naturaleza del tráfico a través de proxy. Otra opción es usar _**proxychains**_
+
+## Nmap Scripts <a href="#nmap-scripts" id="nmap-scripts"></a>
+
+Personalmente, no encuentro que los scripts de nmap sean tan útiles, aunque ocasionalmente tienden a sorprenderme. Siento que hay herramientas mejores y más flexibles para lograr lo que nmap puede hacer con scripts, pero si tienes la capacidad, ¿por qué no aprender?
+
+### Ejecutar Scripts Seguros y Revisar Servicios Vulnerables
+
+```
+$ sudo nmap -p 22,80,443 --script "vuln and safe" 10.20.30.40
+```
+
+Ten en cuenta que estoy especificando puertos. Puedes ejecutar todos los scripts que están categorizados como "Seguros" (que generalmente no generan muchas alertas), así como revisar servicios vulnerables (que generalmente generan alertas). Por ejemplo, esto no solo intentará realizar una comprobación de versión en el servidor web, sino también intentar ver si es vulnerable a algo como el ataque [_Slowloris_](https://en.wikipedia.org/wiki/Slowloris_\(cyber_attack\)).
+
+### Http-enum
+
+```
+$ sudo nmap -p 80 --script http-enum 10.20.30.40
+```
+
+Este script funciona de manera similar a [Nikto](https://hackertarget.com/nikto-website-scanner/). Busca varios archivos interesantes que pueden estar en el servidor. Existen herramientas mejores que este script.
+
+### Smb-enum-users
+
+```
+$ sudo nmap -p 139,445 --script smb-enum-users --script-args 'smbusername="admin",smbpassword="password"' 10.20.30.40
+```
+
+Lo anterior es bastante interesante, hay que admitirlo. Puedes intentar iniciar sesión en un servicio SMB y volcar los usuarios. Puede que haya mejores herramientas, pero es una buena opción tenerla. Si omites los argumentos del script, intentará iniciar sesión como un usuario invitado sin contraseña.
+
+## LDAP <a href="#ldap" id="ldap"></a>
+
+Nmap definitivamente tiene algunos scripts de enumeración LDAP bastante decentes que he utilizado en más de una ocasión.
+
+### **ldap-rootdse**
+
+```
+$ sudo nmap -p 389 --script ldap-rootdse 10.20.30.40
+```
+
+Lo anterior intentará negociar con el servidor LDAP y obtener el DSE, que es la Entrada Específica del DSA (donde DSA significa Agente del Sistema de Directorio). Esto es útil para encontrar el contexto de nombres por defecto, el nombre del equipo y varias otras cosas interesantes sobre un servidor LDAP (como un servidor AD).
+
+### **ldap-search**
+
+```
+$ sudo nmap -p 389 --script ldap-search --script-args 'ldap.username="<ldap bind string>",ldap.password="<ldap password>", etc' 10.20.30.40
+```
+
+Esto realizará una búsqueda LDAP contra el objetivo. Esto es interesante, pero sinceramente es mejor usar _**ldapsearch**_ para esto. De todos modos, puedes leer sobre cómo usarlo aquí si tienes curiosidad.
+
+Sin embargo, más allá de lo anterior, no hay mucho motivo para usar el último. Existe un script ldap-brute que, como lo adivinaste, realiza un ataque de fuerza bruta sobre la autenticación LDAP bind. Pero hay scripts mejores y más flexibles para hacer exactamente eso. _**CrackMapExec**_ es el primero que me viene a la mente. Lo hace bien, lo hace rápido y lo hace más fácil que el script de nmap.
+
+\
+Conclusión
+----------
+
+Lo mejor que puedo mencionar aquí es que nmap es una herramienta súper útil. Tiene un motor de scripting que, en mi opinión, es en su mayoría innecesario. Es útil al principio, pero siempre hay herramientas mejores para lograr lo que necesitas. Desde el inicio hasta el control total, nmap suele ser uno de los primeros pasos que tomarías, pero en la mayoría de los casos sirve para determinar dónde enfocarse a continuación. Es muy útil al inicio de un ataque, también útil después de intentar moverse lateralmente dentro de una red. Pero los scripts son simplemente indiferentes.
