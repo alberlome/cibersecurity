@@ -18,7 +18,7 @@ Comenzamos haciendo un ping a la máquina para ver si nos contesta.
 ping 172.18.0.2
 ```
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Respuesta al comando ping</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Respuesta al comando ping</p></figcaption></figure>
 
 Lanzamos el comando NMAP, con los parámetros -sV y -O.
 
@@ -33,7 +33,7 @@ Acabamos de averiguar que la máquina objetivo dispone de los puertos 80 y 22 ab
 
 Vamos a visitar la web, para ver que nos arroja el puerto 80.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Captura de pantalla de la salida de Apache al instalar un nuevo servidor</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Captura de pantalla de la salida de Apache al instalar un nuevo servidor</p></figcaption></figure>
 
 Vemos que nos retorna la página de configuración del servidor Apache Web Service. Vamos a probar con los ficheros robots.txt y sitemap.xml para ver si contienen información.
 
@@ -47,7 +47,7 @@ Probamos con el comando _**whatweb**_ con el parámetro -v y nos reporta lo sigu
 whatweb 172.18.0.2 -v
 ```
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Ssalida del whatweb -v</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>Ssalida del whatweb -v</p></figcaption></figure>
 
 Hice un _**dirb**_ para hallar directorios ocultos y me encontré con el siguiente output del comando.
 
@@ -97,15 +97,35 @@ Hemos visitado la web objetivo 172.18.0.2/secret.php y hemos encontrado esto.
 
 Lo único que se me ocurre es hacer fuerza bruta al puerto 22 (ssh) pero no se si existe otra solución.
 
-Para ello solo conozco en estos momentos, [hydra](https://www.kali.org/tools/hydra/).
+Para ello solo conozco en estos momentos, [hydra](https://www.kali.org/tools/hydra/). Lanzaremos pues el comando para averiguar el password mediante hydra.
 
+```
+hydra -l mario -P /usr/share/wordlists/metasploit/unix_passwords.txt -t 6 ssh://172.18.0.2
+```
 
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Resultados del ataque al objetivo con Hydra</p></figcaption></figure>
 
+Fase de Post-Explotación
 
+Una vez obtenidas las credenciales del usuario. Podemos acceder a la máquina objetivo mediante SSH.
 
+```
+ssh mario@172.18.0.2
+```
 
+Introducimos la password encontrada anteriormente <mark style="color:blue;">**chocolate**</mark>, y estamos dentro.
 
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
+Ahora deberíamos buscar los ficheros vulnarables que tenga comprometidos la máquina a nivel de sistema que el SUID sea del usuario root. Para ello lanzaremos el siguiente comando
+
+```
+find / -perm -4000 -user root 2>/dev/null
+```
+
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+Vemos que la salida del comando nos retorna todos estos ficheros.
 
 
 
