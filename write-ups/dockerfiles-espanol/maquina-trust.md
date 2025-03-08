@@ -8,7 +8,7 @@ Fecha: 07 de Marzo de 2025
 
 Objetivo: 172.18.0.2
 
-
+***
 
 ## Fase de reconocimiento
 
@@ -91,7 +91,13 @@ Hemos visitado la web objetivo 172.18.0.2/secret.php y hemos encontrado esto.
 
 <figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
+***
+
 ## Fase de Explotación
+
+Lo único que se me ocurre es hacer fuerza bruta al puerto 22 (ssh) pero no se si existe otra solución.
+
+Para ello solo conozco en estos momentos, [hydra](https://www.kali.org/tools/hydra/).
 
 
 
