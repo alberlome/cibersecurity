@@ -47,3 +47,8 @@
   * [Hydra](herramientas/fuerza-bruta/hydra.md)
 
 ## SETUPS
+
+## Burp Suite
+
+* [Vulnerabilidades en el lado del servidor](burp-suite/vulnerabilidades-en-el-lado-del-servidor.md)
+* [Control de acceso](burp-suite/control-de-acceso.md)
