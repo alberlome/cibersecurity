@@ -1,3 +1,17 @@
+---
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # Control de acceso
 
 ## ¿Qué es el control de accesos?
@@ -61,4 +75,49 @@ Copiamos la ruta y la pegamos en el navegador.
 <figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 
 Y podemos ver que tenemos acceso a las funciones de borrado de usuarios. Procedemos a eliminar al usuario Carlos.
+
+## Funcionalidad no protegida - Continuación
+
+En algunos casos, la funcionalidad sensible se oculta dándole una URL menos predecible. Este es un ejemplo de la llamada "seguridad por oscuridad". Sin embargo, ocultar la funcionalidad sensible no proporciona un control de acceso eficaz porque los usuarios podrían descubrir la URL ofuscada de varias maneras.
+
+Imagina una aplicación que aloja funciones administrativas en la siguiente URL:
+
+```
+https://insecure-website.com/administrator-panel-yb556
+```
+
+Esto podría no ser directamente adivinable por un atacante. Sin embargo, la aplicación podría filtrar la URL a los usuarios. La URL podría revelarse en JavaScript que construye la interfaz de usuario basándose en el rol del usuario:
+
+```
+<script>
+	var isAdmin = false;
+	if (isAdmin) {
+		...
+		var adminPanelTag = document.createElement('a');
+		adminPanelTag.setAttribute('href', 'https://insecure-website.com/administrator-panel-yb556');
+		adminPanelTag.innerText = 'Admin panel';
+		...
+	}
+</script>
+```
+
+Este script añade un enlace a la interfaz de usuario del usuario administrador. Sin embargo, el script que contiene la URL es visible para todos los usuarios independientemente de su rol.
+
+## Laboratorio: Funcionalidad de administración desprotegida con URL impredecible
+
+Este laboratorio tiene un panel de administración desprotegido. Se encuentra en una ubicación impredecible, pero la ubicación se revela en algún lugar de la aplicación.
+
+Resuelve el laboratorio accediendo al panel de administración, y usándolo para eliminar al usuario _**carlos**_.
+
+Esta es la web objetivo
+
+<figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+
+Esta es la web objetivo
+
+
+
+
+
+
 

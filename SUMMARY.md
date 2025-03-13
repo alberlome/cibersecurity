@@ -51,7 +51,6 @@
 ## Academia Burp Suite
 
 * [Port Swigger](academia-burp-suite/port-swigger.md)
-* [Vulnerabilidades en el lado del servidor](academia-burp-suite/vulnerabilidades-en-el-lado-del-servidor.md)
-* [Control de acceso](academia-burp-suite/control-de-acceso.md)
-
-## Academia
+* [Vulnerabilidades en el lado del servidor](burp-suite/vulnerabilidades-en-el-lado-del-servidor.md)
+* [Control de acceso](burp-suite/control-de-acceso.md)
+* [Untitled](academia-burp-suite/untitled.md)
