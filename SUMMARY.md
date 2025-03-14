@@ -7,6 +7,7 @@
 * [🐳 DockerLabs (Español)](write-ups/dockerlabs-espanol/README.md)
   * [Máquina INJECTION](write-ups/dockerlabs-espanol/maquina-injection.md)
   * [Máquina TRUST](write-ups/dockerlabs-espanol/maquina-trust.md)
+  * [Máquina BREAKMYSSH](write-ups/dockerlabs-espanol/maquina-breakmyssh.md)
 * [👽 Exámen eJPTv2](write-ups/examen-ejptv2/README.md)
   * [Laboratorio Xerosec eJPTv2](write-ups/examen-ejptv2/laboratorio-xerosec-ejptv2.md)
 

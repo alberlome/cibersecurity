@@ -74,7 +74,7 @@ Para resolver el problema, recupere el contenido del archivo _**/etc/passwd**_.
 
 Me he ido a la web, he abierto en una nueva pista una de las imágenes, he pegado en la barra de direcciones siendo reemplazado el parámetro que llevaba a la imagen por esto ../../../etc/passwd"
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>La respuesta del servidor al realizar la petición</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption><p>La respuesta del servidor al realizar la petición</p></figcaption></figure>
 
 La respuesta del servidor me retorna _**"root"**_
 
@@ -84,15 +84,15 @@ Tambien he probado instalando BURP SUITE Community Edition. Y siguiendo los paso
 
 Primero poner a escuchar a Burp Suite el navegador mediante un proxy.
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>Salida por pantalla de la petición a la web</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Salida por pantalla de la petición a la web</p></figcaption></figure>
 
 Seleccionar la opción de "REPEATER" para poder enviar cabeceras.
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption><p>Enviar al "Repetidor"</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>Enviar al "Repetidor"</p></figcaption></figure>
 
 Una vez que estamos en repeater, volveremos a enviar una petición.
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption><p>Vemos como nos reporta código ofuscado la imágen</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption><p>Vemos como nos reporta código ofuscado la imágen</p></figcaption></figure>
 
 Ahora vamos a probar a poner la ../../../etc/passwd y ver si el servidor es susceptible a esta forma de intrusión. Para ello&#x20;
 
@@ -100,7 +100,7 @@ Primero modificamos el parámetro de file=55.png, quitamos la imagen y ponemos n
 
 Luego una vez modificado pulsamos en el botón "Send", y finalmente verificamos que tenemos passwd de root.
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
