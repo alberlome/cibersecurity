@@ -38,9 +38,13 @@ Si hacemos directamente un ataque con hydra, podemos terminar, pero quería apro
 
 <figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption><p>Salida del comando hydra</p></figcaption></figure>
 
+Fase de Post-Explotación
 
+Ahora vendría la fase donde nos conectamos a la máquina por SSH para verificar que realmente hemos obtenido permisos de root.
 
+<figure><img src="../../.gitbook/assets/image (18).png" alt=""><figcaption><p>Conexión como usuario root</p></figcaption></figure>
 
+Y efectivamente así termina esta máquina sin escalada de privilegios.
 
 
 
