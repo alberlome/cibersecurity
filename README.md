@@ -22,7 +22,7 @@ layout:
 
 Soy Alberto David López, un apasionado de la ciberseguridad, el desarrollo de software y la enseñanza. Me motiva explorar el mundo de la tecnología, desentrañar su complejidad y hacerla accesible para todos.&#x20;
 
-Disfruto resolviendo problemas, investigando vulnerabilidades y ayudando a otros a crecer a través del conocimiento.&#x20;
+Disfruto resolviendo problemas, investigando vulnerabilidades y ayudando a otros a crecer a través del conocimiento utilizando la mayéutica en todos los aspectos.&#x20;
 
 ***
 
