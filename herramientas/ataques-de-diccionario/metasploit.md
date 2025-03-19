@@ -16,7 +16,7 @@ Vale ya tengo levantada la base de datos postgresql
 
 
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Como encender la base de datos postgresql y revisar su estado</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Como encender la base de datos postgresql y revisar su estado</p></figcaption></figure>
 
 Iniciar metasploit lanzando el siguiente comando
 
@@ -24,7 +24,7 @@ Iniciar metasploit lanzando el siguiente comando
 msfconsole
 ```
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Output ejecutar metasploit</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Output ejecutar metasploit</p></figcaption></figure>
 
 Con el comando HELP podemos ver un montón de información, con todo lujo de detalles todo bien explicado en inglés.&#x20;
 
@@ -34,7 +34,7 @@ Lo primero de todo como es la primera vez que iniciamos Metasploit, vamos a lanz
 msfdb init
 ```
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Output comando msfdb init</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>Output comando msfdb init</p></figcaption></figure>
 
 Este comando es necesario solo la primera vez que instalamos Metasploit en la máquina.
 
@@ -44,7 +44,7 @@ Ahora, cerramos la máquina con un exit y volvemos a ejecutar el comando para in
 msfconsole
 ```
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption><p>Salida del output de bienvenida de metasploit</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption><p>Salida del output de bienvenida de metasploit</p></figcaption></figure>
 
 que debemos hacer en metasploit es crearnos un workspace (un área de trabajo) para comenzar.
 
@@ -52,7 +52,7 @@ que debemos hacer en metasploit es crearnos un workspace (un área de trabajo) p
 workspace -a [name]
 ```
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption><p>Output de varios parámetros con el comando workspace</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption><p>Output de varios parámetros con el comando workspace</p></figcaption></figure>
 
 Lo primero que hice es un NMAP desde aqui en metasploit.
 
@@ -60,7 +60,7 @@ Lo primero que hice es un NMAP desde aqui en metasploit.
 nmap -v -A 172.17.0.2
 ```
 
-<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption><p>Output nmap en Metasploit</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1).png" alt=""><figcaption><p>Output nmap en Metasploit</p></figcaption></figure>
 
 Donde podemos ver que esta usando el protocolo SSH con la versión OpenSSH 7.7 (protocolo 2.0). Si ahora hacemos una búsqueda en la BBDD de las vulnerabilidades del puerto SSH con el siguiente comando.
 
@@ -70,7 +70,7 @@ search ssh_version
 
 Podemos ver que existen una serie de auxiliares para la versión 2.0 de SSH.
 
-<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption><p>Output del comando search ssh_version</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1).png" alt=""><figcaption><p>Output del comando search ssh_version</p></figcaption></figure>
 
 Vuelvo a hacer un nmap, y me lo guardo en un fichero xml para subirlo como base de datos a metasploit.
 
@@ -88,7 +88,7 @@ nmap -p- -O -v -oX results.xml 172.17.0.2
 
 Si hacemos un cat del fichero en la consola podemos ver lo que ha generado el comando.
 
-<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption><p>Output cat fichero generado por  la herramienta NMAP</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9) (1).png" alt=""><figcaption><p>Output cat fichero generado por  la herramienta NMAP</p></figcaption></figure>
 
 Ahora ya podemos volver a nuestra terminal con Metasploit, y ejecutar el comando para importar esa base de datos.
 
