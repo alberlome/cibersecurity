@@ -38,5 +38,7 @@ Esta curiosidad me llevó a formarme profesionalmente en administración de sist
 
 Aunque mi trayectoria profesional ha estado centrada en el desarrollo web, concretamente en la parte frontend, y siempre me ha interesado la ciberseguridad y el peritaje informático.&#x20;
 
-Quiero aplicar mi experiencia en sistemas y desarrollo para analizar vulnerabilidades, proteger infraestructuras y **aportar valor** en auditorías y análisis forense. Mi objetivo es seguir formándome en este campo y **contribuir** activamente a la seguridad digital desde la **comunicación** con los demás de manera sencilla y directa, así como el **pensamiento crítico** para ver más allá del reparar y llegar al fondo de la cuestión.
+## Mi valor para tu empresa
+
+Lo que busco es aportar **eficiencia, análisis crítico** y **soluciones efectivas**. Mi enfoque es siempre práctico, con una base sólida en tecnología y un deseo constante de seguir aprendiendo y adaptándome a nuevos desafíos. Estoy convencido de que el éxito profesional no solo se logra con conocimiento técnico, sino también con la capacidad de **comunicar** de manera efectiva, **trabajar en equipo** y **pensar de forma estratégica** para enfrentar los retos de la ciberseguridad.
 
