@@ -12,6 +12,11 @@
 * [👽 Exámen eJPTv2](write-ups/examen-ejptv2/README.md)
   * [Laboratorio Xerosec eJPTv2](write-ups/examen-ejptv2/laboratorio-xerosec-ejptv2.md)
 
+***
+
+* [TryHackMe](tryhackme/README.md)
+  * [OhSint](tryhackme/ohsint.md)
+
 ## Herramientas
 
 * [Recolección](herramientas/recoleccion/README.md)
