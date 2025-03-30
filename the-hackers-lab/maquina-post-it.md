@@ -45,7 +45,7 @@ Si recopilamos toda la información encontrada hasta ahora para el usuario "Cibe
 
 
 
-**Evidencias en Tiktok**
+### **Evidencias en Tiktok**
 
 <figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
@@ -67,13 +67,11 @@ Por ahora nada más.
 
 
 
-**Evidencias Instagram**
+### **Evidencias Instagram**
 
 <figure><img src="../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
 
-
-
-En UnSplash
+### **En UnSplash**
 
 Buscando por CIberDefender, no aparece nada interesante en usuarios. Pero si buscamos por "Jhow" si que podemos ver la siguiente captura.
 
