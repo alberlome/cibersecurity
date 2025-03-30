@@ -4,9 +4,9 @@ description: 'Dificultad: Muy fácil'
 
 # Máquina Post-it
 
-Fecha: 30 de Marzo de 2025
+**Fecha**: 30 de Marzo de 2025
 
-Objetivo: 172.17.0.2
+**Objetivo**: Averiguar nombre de usuario "CiberDefender"
 
 ***
 
