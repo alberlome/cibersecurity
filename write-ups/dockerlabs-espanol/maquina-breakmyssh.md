@@ -42,7 +42,7 @@ Si hacemos directamente un ataque con hydra, podemos terminar, pero quería apro
 
 Ahora vendría la fase donde nos conectamos a la máquina por SSH para verificar que realmente hemos obtenido permisos de root.
 
-<figure><img src="../../.gitbook/assets/image (18).png" alt=""><figcaption><p>Conexión como usuario root</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (18) (1).png" alt=""><figcaption><p>Conexión como usuario root</p></figcaption></figure>
 
 Y efectivamente así termina esta máquina sin escalada de privilegios.
 

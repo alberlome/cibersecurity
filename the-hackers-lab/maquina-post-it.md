@@ -28,9 +28,9 @@ Una vez que sabemos todo esto, vamos a hacer uso de nuestras herramientas de OSI
 
 Como podemos encontrar información de alguien, se me ocurre usar la herramienta, _OSINT information_, para ver si encontramos algo.
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>Captura de WhatsMyName Web</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption><p>Captura de WhatsMyName Web</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>Captura de InstantUserName</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption><p>Captura de InstantUserName</p></figcaption></figure>
 
 
 
@@ -47,9 +47,9 @@ Si recopilamos toda la información encontrada hasta ahora para el usuario "Cibe
 
 **Evidencias en Tiktok**
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
 Vemos un nombre de usuario o algo similar llamado "Jhow".\
 \
@@ -67,29 +67,9 @@ Por ahora nada más.
 
 
 
-Evidencias Instagram
+**Evidencias Instagram**
 
-<figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
-
-
-
-**Evidencia en TryHackMe**
-
-<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption><p>Evidencia en TryHackMe</p></figcaption></figure>
-
-**Podemos ver la bandera de Brasil.**
-
-Junto a que el tiktok estaba escrito en portugués podemos deducir que es posible que sea Brasileño.
-
-
-
-**Evidencias PEING**
-
-Peing es una plataforma de preguntas y respuestas anónimas. Al entrar en "peing" nos aparece el siguiente mensaje. Vamos a traducir el mensaje.
-
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption><p>Salida por pantalla de peing.net/CiberDefender</p></figcaption></figure>
-
-Nos dice en un idioma asiático que la página web no está disponible en estos momentos.
+<figure><img src="../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -99,29 +79,50 @@ Buscando por CIberDefender, no aparece nada interesante en usuarios. Pero si bus
 
 Buscando en google poniendo @CiberDefender por si hubiera fortuna vi estos resultados, y me llamo la atención sobre todo el último, el enlace de Pixwow que parece una especie de red social.
 
-<figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
 
 Una vez dentro al visitar la página, vi que tenía 11 post y 1 follower.
 
-<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption><p>Imagen de su perfil de instagram</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (21).png" alt=""><figcaption><p>Imagen de su perfil de instagram</p></figcaption></figure>
 
 En esta imagen podemos apreciar lo que parece un número de teléfono y habla de que se trata de su cubículo, así que lo mas probable es que sea su lugar de trabajo.
 
-+34 300 455 789
+**+34 300 455 789**
 
-En el resto de imágenes, podemos ver el Palacio de las Telecomunicaciones que esta en la plaza Cibeles de Madrid.
-
-
+En el resto de imágenes, podemos ver el Palacio de las Telecomunicaciones que esta en la plaza Cibeles de **Madrid**.\
 
 
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+Si miramos en un post dice, **"Comenczamos la carrera de ingenieria"** y sale la imagen de un edificio. Vamos a buscar esa imagen en Google para ver si nos da mas información.
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>Búsqueda de la imagen en Google Images</p></figcaption></figure>
+
+Parece que se trata de la Universidad de Jaén.
+
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>Evidencia de esa universidad</p></figcaption></figure>
 
 
 
+Probamos el usuario en X
 
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
+![](<../.gitbook/assets/image (4).png>)![](<../.gitbook/assets/image (5).png>)\
 \
-\
+Usa de thehackerlabs y ha hecho una máquina/laboratorio.
+
+<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+
+**Ubicación** Madrid
+
+**Teléfono**: +34 300 455 789
+
+**Nombre completo**: Davis Abduzcan Ruiz
+
+**Lugar de estudios**: Universidad de Jaén.
+

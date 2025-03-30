@@ -16,7 +16,7 @@
 
 * [⚗️ TryHackMe](tryhackme/README.md)
   * [OhSint](tryhackme/ohsint.md)
-* [🏪 The Hackers Lab](the-hackers-lab/README.md)
+* [🏪 The Hackers Lab](the-hackers-lab.md)
   * [Máquina Post-it](the-hackers-lab/maquina-post-it.md)
 
 ## Herramientas

@@ -23,7 +23,7 @@ He utilizado el comando:
 
 exiftool -a WindowsXP.jpg
 
-<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
 
 Para obtener una información mas amplia de la información de la fotografía he usado:
 

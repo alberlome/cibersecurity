@@ -68,11 +68,11 @@ Vamos a hacer una pequeña investigación y visitaremos el fichero _**robots.txt
 
 En el fichero robots.txt hallamos la siguiente ruta:
 
-<figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
 
 Copiamos la ruta y la pegamos en el navegador.
 
-<figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (16) (1).png" alt=""><figcaption></figcaption></figure>
 
 Y podemos ver que tenemos acceso a las funciones de borrado de usuarios. Procedemos a eliminar al usuario Carlos.
 
@@ -111,7 +111,7 @@ Resuelve el laboratorio accediendo al panel de administración, y usándolo para
 
 Esta es la web objetivo
 
-<figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (17) (1).png" alt=""><figcaption></figcaption></figure>
 
 Esta es la web objetivo
 
