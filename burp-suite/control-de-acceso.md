@@ -26,7 +26,7 @@ El control de acceso determina si el usuario está autorizado a llevar a cabo la
 
 Los controles de acceso rotos son comunes y a menudo presentan una vulnerabilidad de seguridad crítica. El diseño y la gestión de los controles de acceso es un problema complejo y dinámico que aplica restricciones empresariales, organizativas y legales a una implementación técnica. Las decisiones de diseño de los controles de acceso tienen que ser tomadas por humanos, por lo que el potencial de errores es alto.
 
-<figure><img src="../.gitbook/assets/image (13) (1).png" alt=""><figcaption><p>Imagen de BurpSuite - WebSecurity - </p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (13) (1) (1).png" alt=""><figcaption><p>Imagen de BurpSuite - WebSecurity - </p></figcaption></figure>
 
 
 
@@ -62,7 +62,7 @@ Resuelve el laboratorio borrando el usuario _**carlos**_.
 
 Tenemos este sitio web
 
-<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (14) (1).png" alt=""><figcaption></figcaption></figure>
 
 Vamos a hacer una pequeña investigación y visitaremos el fichero _**robots.txt**_ para ver si nos aporta algo mas de información.
 

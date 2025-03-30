@@ -26,7 +26,7 @@ Proseguimos con un nmap para ver los puertos, sistema operativo, etc. Ejecutamos
 nmap -p- -O -v 172.17.0.2
 ```
 
-<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption><p>Salida del comando NMAP</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9) (1).png" alt=""><figcaption><p>Salida del comando NMAP</p></figcaption></figure>
 
 Vemos que solo nos ha arrojado que únicamente esta máquina tiene abierto el puerto 22.
 
@@ -36,7 +36,7 @@ Si hacemos directamente un ataque con hydra, podemos terminar, pero quería apro
  hydra -l root -P /usr/share/wordlists/rockyou.txt ssh://172.17.0.2 -t 4
 ```
 
-<figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption><p>Salida del comando hydra</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12) (1).png" alt=""><figcaption><p>Salida del comando hydra</p></figcaption></figure>
 
 ## Fase de Post-Explotación
 
