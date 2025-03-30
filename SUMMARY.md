@@ -16,6 +16,7 @@
 
 * [⚗️ TryHackMe](tryhackme/README.md)
   * [OhSint](tryhackme/ohsint.md)
+* [The Hackers Lab](the-hackers-lab.md)
 
 ## Herramientas
 
