@@ -37,6 +37,7 @@
 * [Directorios Ocultos ](herramientas/directorios-ocultos/README.md)
   * [DirB](herramientas/directorios-ocultos/dirb.md)
   * [DirSearch](herramientas/directorios-ocultos/dirsearch.md)
+  * [GoBuster](herramientas/directorios-ocultos/gobuster.md)
 * [Escaneo protocolos y servicios](herramientas/escaneo-protocolos-y-servicios/README.md)
   * [Nmap](herramientas/escaneo-protocolos-y-servicios/nmap.md)
 * [Escaneo de vulnerabilidades](herramientas/escaneo-de-vulnerabilidades/README.md)
