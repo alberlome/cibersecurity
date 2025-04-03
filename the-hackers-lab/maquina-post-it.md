@@ -92,27 +92,27 @@ En esta imagen podemos apreciar lo que parece un número de teléfono y habla de
 En el resto de imágenes, podemos ver el Palacio de las Telecomunicaciones que esta en la plaza Cibeles de **Madrid**.\
 
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 Si miramos en un post dice, **"Comenczamos la carrera de ingenieria"** y sale la imagen de un edificio. Vamos a buscar esa imagen en Google para ver si nos da mas información.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>Búsqueda de la imagen en Google Images</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption><p>Búsqueda de la imagen en Google Images</p></figcaption></figure>
 
 Parece que se trata de la Universidad de Jaén.
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>Evidencia de esa universidad</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Evidencia de esa universidad</p></figcaption></figure>
 
 
 
 Probamos el usuario en X
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
-![](<../.gitbook/assets/image (4).png>)![](<../.gitbook/assets/image (5).png>)\
+![](<../.gitbook/assets/image (4) (1).png>)![](<../.gitbook/assets/image (5) (1).png>)\
 \
 Usa de thehackerlabs y ha hecho una máquina/laboratorio.
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 

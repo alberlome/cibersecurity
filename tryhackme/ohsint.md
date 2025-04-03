@@ -27,15 +27,15 @@ exiftool -a WindowsXP.jpg
 
 Para obtener una información mas amplia de la información de la fotografía he usado:
 
-<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Para resolver la primera he buscado el nombre de usuario que aparece en el campo "Copyright" y he encontrado esto en una búsqueda de Google:
 
-<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Por lo tanto la primera pregunta, se resuelve con la palabra "cat".
 
 Seguimos investigando, y entro en el perfil de twitter, y me he encontrado un BSSID. Probablemente del router.
 
-<figure><img src="../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
