@@ -65,6 +65,7 @@
 * [Vulnerabilidades en el lado del servidor](burp-suite/vulnerabilidades-en-el-lado-del-servidor.md)
 * [Control de acceso](burp-suite/control-de-acceso.md)
 * [Vulnerabilidades del lado del servidor](academia-burp-suite/vulnerabilidades-del-lado-del-servidor.md)
+* [Vulnerabilidades de autenticación](academia-burp-suite/vulnerabilidades-de-autenticacion.md)
 
 ## Google Cibersecurity
 
