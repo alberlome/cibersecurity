@@ -64,7 +64,7 @@
 * [Port Swigger](academia-burp-suite/port-swigger.md)
 * [Vulnerabilidades en el lado del servidor](burp-suite/vulnerabilidades-en-el-lado-del-servidor.md)
 * [Control de acceso](burp-suite/control-de-acceso.md)
-* [Untitled](academia-burp-suite/untitled.md)
+* [Vulnerabilidades del lado del servidor](academia-burp-suite/vulnerabilidades-del-lado-del-servidor.md)
 
 ## Google Cibersecurity
 

@@ -30,7 +30,7 @@ Primero haremos un nmap para ver que protocolos están ejecutándose en la máqu
 
 Podemos ver que el puerto 21 correspondiente al servicio del FTP, está ejecutando la versión de _vsftdp_ 2.3.4. Podríamos intentar conectarnos por FTP a ese servicio para ver que nos retorna.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption><p>Captura comando FTP - conexión rechazada</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Captura comando FTP - conexión rechazada</p></figcaption></figure>
 
 Al intentar conectarme con el usuario root, poniendo una contraseña _random_, la conexión es rechazada. Lo que me hace pensar si existirá algún tipo de vulnerabilidad para el servicio FTP en la versión "_vsftpd_ 2.3.4", vamos a buscar en Google.
 
