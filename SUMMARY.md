@@ -22,6 +22,7 @@
 
 ## Academia Burp Suite
 
+* [¿Qué es BurpSuite?](academia-burp-suite/que-es-burpsuite.md)
 * [Port Swigger](academia-burp-suite/port-swigger.md)
 * [Vulnerabilidades en el lado del servidor](burp-suite/vulnerabilidades-en-el-lado-del-servidor.md)
 * [Vulnerabilidades de autenticación](academia-burp-suite/vulnerabilidades-de-autenticacion.md)
