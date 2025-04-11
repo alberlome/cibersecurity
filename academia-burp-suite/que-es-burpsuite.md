@@ -2,13 +2,13 @@
 
 **Burp Suite** es una plataforma de pruebas de seguridad de aplicaciones web utilizada por profesionales de ciberseguridad, **probadores de penetración** (pentesters) y **auditores de seguridad** para identificar vulnerabilidades y debilidades en aplicaciones web. Desarrollado por **PortSwigger**, Burp Suite es una de las herramientas más populares y completas en el ámbito de la **seguridad web** debido a su amplia gama de funcionalidades y su capacidad para realizar un análisis exhaustivo de los sistemas web.
 
-#### **¿Qué hace Burp Suite?**
+## **¿Qué hace Burp Suite?**
 
 Burp Suite está diseñada para ayudar a los profesionales de seguridad a encontrar y explotar fallos de seguridad en aplicaciones web. A través de un conjunto de herramientas integradas, Burp Suite puede analizar, interceptar y manipular el tráfico HTTP/S entre un cliente (como un navegador) y un servidor web, permitiendo a los testers observar y modificar las solicitudes y respuestas de una aplicación.
 
 Burp Suite no solo es útil para pruebas manuales, sino que también cuenta con herramientas automatizadas que permiten escanear de forma más rápida aplicaciones web en busca de vulnerabilidades conocidas.
 
-#### **Características Clave de Burp Suite**:
+## **Características Clave de Burp Suite**
 
 Burp Suite se compone de varias herramientas que trabajan en conjunto para realizar análisis de seguridad en aplicaciones web. Las herramientas principales son:
 
@@ -58,13 +58,13 @@ Burp Suite se compone de varias herramientas que trabajan en conjunto para reali
 * **Burp Comparer** permite comparar dos solicitudes o respuestas HTTP para identificar diferencias.
 * Esto es útil cuando se quiere ver cómo una pequeña modificación en una solicitud (como un parámetro) afecta la respuesta del servidor.
 
-#### **Versiones de Burp Suite**:
+## **Versiones de Burp Suite**:
 
 * **Burp Suite Community Edition** (Gratuita): Es una versión limitada de la herramienta, ideal para usuarios que desean realizar pruebas de penetración manuales básicas. Carece de algunas funciones avanzadas como el **escáner de vulnerabilidades** y **automación**.
 * **Burp Suite Professional** (De Pago): Esta versión incluye todas las funcionalidades de la Community Edition más herramientas avanzadas, como el **escáner de vulnerabilidades automático** y **funciones de automatización**. Es la opción preferida por los profesionales de seguridad y las empresas.
 * **Burp Suite Enterprise Edition**: Está diseñada para pruebas de seguridad a gran escala, ideal para equipos de seguridad que necesitan realizar pruebas de penetración automatizadas de forma continua.
 
-#### **Casos de Uso Comunes**:
+## **Casos de Uso Comunes**:
 
 1. **Pruebas de Penetración (Pentesting)**:
    * Burp Suite es ampliamente utilizada por **pentesters** para realizar auditorías de seguridad en aplicaciones web, encontrar vulnerabilidades críticas y ayudar a mitigar los riesgos antes de que los atacantes maliciosos puedan explotarlas.
@@ -75,11 +75,11 @@ Burp Suite se compone de varias herramientas que trabajan en conjunto para reali
 4. **Investigación de Vulnerabilidades**:
    * Burp Suite también es muy utilizada para **investigar vulnerabilidades** específicas de aplicaciones web, como las que afectan a las bases de datos o las aplicaciones de autenticación.
 
-#### **Precauciones y Consideraciones**:
+## **Precauciones y Consideraciones**:
 
 * **Uso Ético**: Burp Suite debe usarse de manera ética y con **permiso explícito**. Las pruebas de penetración sin autorización son ilegales en muchos países.
 * **Impacto en el Servidor**: Algunas de las herramientas de Burp Suite (como el escáner de vulnerabilidades) pueden generar una carga en el servidor web objetivo, por lo que es importante realizar pruebas de manera controlada para no afectar el rendimiento del sistema.
 
-#### **Conclusión**:
+## **Conclusión**
 
 **Burp Suite** es una herramienta integral y poderosa para realizar pruebas de penetración y auditorías de seguridad en aplicaciones web. Su conjunto de herramientas permite a los profesionales de seguridad realizar análisis exhaustivos, desde la interceptación de tráfico hasta la identificación de vulnerabilidades críticas como inyecciones SQL, XSS y CSRF. Aunque la **versión Community** es útil para aprender y realizar pruebas básicas, la **versión Pro** es ideal para realizar pruebas de seguridad avanzadas y profesionales.
