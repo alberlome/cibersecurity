@@ -31,6 +31,7 @@
 ## hacksplaining
 
 * [IA: Ataques de extracción de datos](hacksplaining/ia-ataques-de-extraccion-de-datos.md)
+* [IA: Inyección Prompt](hacksplaining/ia-inyeccion-prompt.md)
 
 ## Herramientas
 
