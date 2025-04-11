@@ -20,6 +20,18 @@
   * [Máquina Post-it](the-hackers-lab/maquina-post-it.md)
   * [Máquina JaulaCon2025](the-hackers-lab/maquina-jaulacon2025.md)
 
+## Academia Burp Suite
+
+* [Port Swigger](academia-burp-suite/port-swigger.md)
+* [Vulnerabilidades en el lado del servidor](burp-suite/vulnerabilidades-en-el-lado-del-servidor.md)
+* [Control de acceso](burp-suite/control-de-acceso.md)
+* [Vulnerabilidades del lado del servidor](academia-burp-suite/vulnerabilidades-del-lado-del-servidor.md)
+* [Vulnerabilidades de autenticación](academia-burp-suite/vulnerabilidades-de-autenticacion.md)
+
+## hacksplaining
+
+* [IA: Ataques de extracción de datos](hacksplaining/ia-ataques-de-extraccion-de-datos.md)
+
 ## Herramientas
 
 * [Recolección](herramientas/recoleccion/README.md)
@@ -59,14 +71,6 @@
 
 ## SETUPS
 
-## Academia Burp Suite
-
-* [Port Swigger](academia-burp-suite/port-swigger.md)
-* [Vulnerabilidades en el lado del servidor](burp-suite/vulnerabilidades-en-el-lado-del-servidor.md)
-* [Control de acceso](burp-suite/control-de-acceso.md)
-* [Vulnerabilidades del lado del servidor](academia-burp-suite/vulnerabilidades-del-lado-del-servidor.md)
-* [Vulnerabilidades de autenticación](academia-burp-suite/vulnerabilidades-de-autenticacion.md)
-
 ## Google Cibersecurity
 
 * [Módulo 01](google-cibersecurity/modulo-01/README.md)
@@ -78,7 +82,3 @@
   * [02 - Los ocho dominios de seguridad de CISSP](google-cibersecurity/modulo-02/02-los-ocho-dominios-de-seguridad-de-cissp.md)
 * [Módulo 03](google-cibersecurity/modulo-03/README.md)
   * [01 - Marcos de seguridad](google-cibersecurity/modulo-03/01-marcos-de-seguridad.md)
-
-## hacksplaining
-
-* [IA: Ataques de extracción de datos](hacksplaining/ia-ataques-de-extraccion-de-datos.md)
