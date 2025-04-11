@@ -78,3 +78,7 @@
   * [02 - Los ocho dominios de seguridad de CISSP](google-cibersecurity/modulo-02/02-los-ocho-dominios-de-seguridad-de-cissp.md)
 * [Módulo 03](google-cibersecurity/modulo-03/README.md)
   * [01 - Marcos de seguridad](google-cibersecurity/modulo-03/01-marcos-de-seguridad.md)
+
+## hacksplaining
+
+* [IA: Ataques de extracción de datos](hacksplaining/ia-ataques-de-extraccion-de-datos.md)
