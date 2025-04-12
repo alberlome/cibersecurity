@@ -19,6 +19,7 @@
 * [🏪 The Hackers Lab](the-hackers-lab.md)
   * [Máquina Post-it](the-hackers-lab/maquina-post-it.md)
   * [Máquina JaulaCon2025](the-hackers-lab/maquina-jaulacon2025.md)
+* [🛡️ TSS Ciberseguridad](tss-ciberseguridad.md)
 
 ## Academia Burp Suite
 
