@@ -316,7 +316,383 @@ El adversario tiene ahora dos víctimas afectadas desde las que puede iniciar at
 
 <figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
+## 6.4 Respuesta a Incidentes
+
+## 6.4.1 Establecer una Capacidad de Respuesta a Incidentes
+
+La respuesta a incidentes implica los métodos, políticas y procedimientos que utiliza una organización para responder a un ataque cibernético. Los objetivos de la respuesta ante incidentes son limitar el impacto del ataque, evaluar los daños causados e implementar procedimientos de recuperación. Debido a la posible pérdida a gran escala de bienes e ingresos que pueden causar los ciberataques, es esencial que las organizaciones creen y mantengan planes detallados de respuesta a incidentes y designen al personal responsable de ejecutar todos los aspectos de ese plan.
+
+Las recomendaciones del NIST (U.S. National Institute of Standards and Technology ) para la respuesta ante los incidentes se detallan en su Publicación especial 800-61 (Revisión 2) titulada “Guía de manejo de incidentes de seguridad informática” que se muestra en la figura.
+
+**Nota:** Aunque este capítulo resume gran parte del contenido en el estándar NIST 800-61r2, debería familiarizarse con la publicación entera para cubir todos los temas del examen Entendiendo Operaciones Fundamentales Ciberseguridad de Cisco ( Understanding Cisco Cybersecurity Operations Fundamentals).dond
+
+<figure><img src="../../.gitbook/assets/image (56).png" alt=""><figcaption></figcaption></figure>
+
+El estándar 800-612r del NIST proporciona pautas para el manejo de incidentes, especialmente para analizar datos relacionados con el incidente y determinar la respuesta adecuada para cada incidente. Es posible respetar las pautas independientemente de las plataformas de hardware, los sistemas operativos, los protocolos o las aplicaciones que se utilicen.
+
+El primer paso para una organización es establecer una capacidad de respuesta ante los incidentes de seguridad informática (CSIRC, computer security incident response capability). NIST recomienda crear políticas, planes y procedimientos para establecer y mantener un CSIRC.
+
+### Elementos de la Política
+
+Una política de respuesta ante los incidentes detalla cómo deben manejarse los incidentes de acuerdo con la misión, el tamaño y la función de la organización. La política debe revisarse periódicamente a fin de modificarla para que cumpla con los objetivos de la hoja de ruta que se haya trazado. Entre los elementos de política figuran los siguientes:
+
+* Declaración del compromiso de la gerencia
+* Propósito y objetivos de la política
+* Alcance de la política
+* Definición de incidentes de seguridad informática y términos relacionados
+* Estructura organizacional y definición de roles, responsabilidades y niveles de autoridad
+* Calificaciones de priorización o gravedad de incidentes
+* Acciones de desempeño
+* Formularios de informes y contacto
+
+### Elementos del plan
+
+Un buen plan de respuesta ante los incidentes ayuda a minimizar el daño causado por un incidente. También ayuda a mejorar el programa de respuesta ante los incidentes en general, ajustándolo según las lecciones aprendidas. El plan debe garantizar que cada parte implicada en la respuesta ante un incidente comprenda claramente lo qué hará y lo qué harán los demás. Los elementos del plan son los siguientes:
+
+* Misión
+* Estrategias y metas
+* Aprobación de la cúpula gerencial
+* Enfoque organizativo para la respuesta ante los incidentes
+* Cómo se comunicará el equipo de respuesta ante los incidentes con el resto de la organización y con otras organizaciones
+* Métricas para medir la funcionalidad de respuesta ante los incidentes.
+* Cómo encaja el programa en la organización general
+
+### Elementos del procedimiento
+
+Los procedimientos que se siguen durante una respuesta ante un incidente deben respetar el plan de respuesta ante los incidentes. Los elementos de procedimientos son los siguientes:
+
+* Procesos técnicos
+* Usar técnicas
+* Rellenar formularios,
+* Siguiendo listas de comprobación
+
+Estos son los procesos comunes operativos estándar (SOP) Estos SOP deben ser detallados para tener en mente la misión y los objetivos de la organización cuando se los sigue. Los SOP minimizan los errores que podría causar el personal cuando está bajo presión mientras participa en el manejo de incidentes. Es importante compartir y poner en práctica estos procedimientos, asegurándose de que sean útiles, precisos y adecuados.
+
+## **6.4.3 Partes Interesadas en la Respuesta a Incidentes**
+
+Otros grupos e individuos dentro de la organización también pueden estar involucrados en el manejo de incidentes. Es importante asegurarse de que cooperen antes de que ocurra un incidente. Sus conocimientos y habilidades pueden ayudar al Equipo de Respuesta a Incidentes de Seguridad Informática (CSIRT) a manejar el incidente rápida y correctamente. Estas son algunas de las partes interesadas que pueden estar involucradas en el manejo de un incidente de seguridad:
+
+* Gerencia  \
+  Los gerentes crean las políticas que todos deben respetar. También diseñan el presupuesto y están a cargo de dotar de personal a todos los departamentos. La Gerencia debe coordinar la respuesta ante los incidentes con otras partes interesadas y minimizar el daño causado por el incidente.
+* Protección de la Información  \
+  Es posible que sea necesario convocar a este grupo para cambiar elementos, como las reglas de firewall, durante algunas etapas de la administración de incidentes como contención o recuperación.
+* Soporte de TI  \
+  Este es el grupo que trabaja con la tecnología en la organización y la comprende al máximo. Dado que el conocimiento del Soporte de TI es muy amplio, es más probable que sean ellos quienes ejecuten las medidas correctas para minimizar la efectividad del ataque o proteger adecuadamente la evidencia.
+* Soporte de TI  \
+  Este es el grupo que trabaja con la tecnología en la organización y la comprende al máximo. Dado que el conocimiento del Soporte de TI es muy amplio, es más probable que sean ellos quienes ejecuten las medidas correctas para minimizar la efectividad del ataque o proteger adecuadamente la evidencia.
+* Relaciones Públicas y con los Medios  \
+  Hay momentos en los que se debe informar sobre un incidente a los medios de comunicación y al público, como cuando se pone en riesgo información personal durante un incidente.
+* Recursos Humanos  \
+  Es posible que el departamento de Recursos Humanos necesite implementar medidas disciplinarias si el incidente lo causa un empleado.
+* Planificadores de Continuidad del Negocio  \
+  Los incidentes de seguridad pueden alterar la continuidad de los negocios de una organización. Es importante que los responsables de la planificación de continuidad de los negocios conozcan los incidentes de seguridad y su impacto en la totalidad de la organización. Esto les permitirá realizar cambios en los planes y las evaluaciones de riesgo.
+* Administración de las Instalaciones y la Seguridad Física  \
+  Cuando ocurre un incidente de seguridad debido a un ataque físico, como la infiltración (tailgating) o mirar por encima del hombro, es posible que sea necesario informar e involucrar a estos equipos. También es su responsabilidad proteger las instalaciones que contienen evidencias de una investigación.
 
 
 
+**La certificación del modelo de madurez de ciberseguridad**
 
+El marco de certificación del modelo de madurez de ciberseguridad (CMMC) fue creado para evaluar la capacidad de las organizaciones que desempeñan funciones para el Departamento de Defensa de los Estados Unidos (DoD) para proteger la cadena de suministro militar de interrupciones o pérdidas debidas a incidentes de ciberseguridad. Las brechas de seguridad relacionadas con la información del Departamento de Defensa (DoD) indicaron que los estándares del NIST no eran suficientes para mitigar el creciente y cambiante panorama de amenazas, especialmente de los actores de amenazas de los estados-nación. Para que las empresas reciban contratos del DoD, dichas empresas deben estar certificadas. La certificación consta de cinco niveles, con diferentes niveles requeridos dependiendo del grado de seguridad requerido por el proyecto.
+
+El CMMC especifica 17 dominios, cada uno de los cuales tiene un número variable de capacidades asociadas a él. La organización se califica por el nivel de madurez que se ha alcanzado para cada uno de los dominios. Uno de los dominios se refiere a la respuesta a incidentes. Las capacidades asociadas con el dominio de respuesta a incidentes son las siguientes:
+
+* Planes de respuesta a incidentes
+* Detectar e informar de eventos
+* Desarrollar e implementar una respuesta a un incidente declarado
+* Realizar revisiones posteriores a incidentes
+* Prueba de respuesta a incidentes
+
+La CMMC certifica las organizaciones por nivel. Para la mayoría de los dominios, hay cinco niveles, sin embargo, para la respuesta a incidentes, sólo hay cuatro. Cuanto mayor sea el nivel certificado, más madura será la capacidad de ciberseguridad de la organización. A continuación se muestra un resumen de los niveles de madurez del dominio de respuesta a la incidencia.
+
+* Nivel 2  \
+  Establecer un plan de respuesta a incidentes que siga el proceso NIST. Detecte, informe y priorice eventos. Responder a los eventos siguiendo procedimientos predefinidos. Analizar la causa de los incidentes para mitigar problemas futuros.
+* Nivel 3  \
+  Documentar e informar a las partes interesadas que hayan sido identificadas en el plan de respuesta a incidentes. Pruebar la capacidad de respuesta a incidentes de la organización.
+* Nivel 4  \
+  Utilizar el conocimiento de las tácticas, técnicas y procedimientos del atacante (TPT) para refinar la planificación y ejecución de la respuesta a incidentes. Establezca un centro de operaciones de seguridad (SOC) que facilite una capacidad de respuesta 24/7.
+* Nivel 5  \
+  Utilizar técnicas de recopilación de datos forenses informáticos aceptadas y sistemáticas, incluido el manejo y almacenamiento seguros de datos forenses. Desarrollar y utilizar respuestas manuales y automatizadas en tiempo real a posibles incidentes que sigan patrones conocidos.
+
+<figure><img src="../../.gitbook/assets/image (57).png" alt=""><figcaption></figcaption></figure>
+
+6.4.4 Ciclo de Vida de Respuesta a Incidentes del NIST
+
+NIST definir cuatro pasos en el ciclo de vida del proceso de respuesta ante los incidentes, como se ve en la figura.
+
+Preparación\
+Los miembros del CSIRT reciben capacitación sobre cómo responder ante un incidente. Los miembros del CSIRT deben desarrollar continuamente su conocimiento de las amenazas emergentes.
+
+Detección y Análisis\
+Mediante el monitoreo continuo, el CSIRT identifica, analiza y valida rápidamente un incidente.
+
+Contención, Erradicación y Recuperación\
+El CSIRT implementa procedimientos para contener la amenaza, erradicar el impacto en los activos de la organización y utilizar copias de respaldo para restaurar datos y software. Es posible que, durante esta fase, se regrese a la detección y el análisis para obtener más información o para ampliar el alcance de la investigación.
+
+Actividades Posteriores al Incidente\
+Luego, el CSIRT documenta cómo se manejó el incidente, recomienda cambios para respuestas futuras y especifica cómo evitar que vuelva a suceder.
+
+<figure><img src="../../.gitbook/assets/image (58).png" alt=""><figcaption></figcaption></figure>
+
+## 6.4.5 Preparación
+
+La fase de preparación tiene lugar cuando se crea el CSIRT y se lo capacita. Esta fase ocurre cuando se adquieren e implementan las herramientas y los activos que serán necesarios para que el equipo investigue los incidentes. La siguiente lista tiene ejemplos de acciones que también tienen lugar durante la fase de preparación:
+
+* Los procesos organizativos se crean para abordar la comunicación entre las personas y el equipo de respuesta. Esto incluye elementos como la información de contacto para las partes interesadas, otros CSIRT y la autoridad encargada del orden público, un sistema de seguimiento de problemas, smartphones, software de cifrado, etc.
+* Se crean instalaciones para alojar al equipo de respuesta y al SOC.
+* Se adquiere el hardware y software necesario para el análisis de incidentes y la mitigación. Esto puede incluir software de informática forense, computadoras de repuesto, servidores y dispositivos de red, dispositivos de respaldo, analizadores de paquetes y analizadores de protocolos.
+* Las evaluaciones de riesgos se utilizan para implementar controles que limitarán la cantidad de incidentes.
+* La validación de la implementación de hardware y software de seguridad se realiza en dispositivos de usuarios finales, servidores y dispositivos de red.
+* Se desarrollan materiales de capacitación para usuarios con el fin de concientizarlos sobre la seguridad.
+
+Es posible que hagan falta recursos de análisis de incidentes adicionales. Ejemplos de estos recursos son una lista de activos críticos, diagramas de red, listas de puertos, hash de archivos esenciales y lecturas de los valores de referencia de la actividad de la red y el sistema. El software de mitigación también es un elemento importante al prepararse para manejar un incidente de seguridad. Es posible que se necesite una imagen de un sistema operativo limpio y archivos de instalación de aplicaciones para recuperar una computadora de un incidente.
+
+A menudo, el CSIRT suele tener preparado un kit de emergencia. Se trata de una caja portátil con muchos de los elementos mencionados antes para ayudar a establecer una respuesta rápida. Algunos de estos elementos pueden ser una computadora portátil con el software apropiado instalado, medios de respaldo, y cualquier otro hardware, software o información para ayudar en la investigación. Es importante inspeccionar el kit de emergencia periódicamente para instalar actualizaciones y asegurarse de que todos los elementos necesarios están disponibles y listos para usar. También resulta útil implementar el kit de emergencia con el CSIRT para asegurarse de que los miembros del equipo sepan cómo utilizar correctamente el contenido.
+
+#### Fase de preparación
+
+<figure><img src="../../.gitbook/assets/image (59).png" alt=""><figcaption></figcaption></figure>
+
+## 6.4.6 Detección y Análisis
+
+**Fase de detección y análisis**
+
+<figure><img src="../../.gitbook/assets/image (60).png" alt=""><figcaption></figcaption></figure>
+
+Dado que hay muchas maneras diferentes en las que puede ocurrir un incidente de seguridad, es imposible crear instrucciones que abarquen completamente cada paso para manejarlos. Los distintos tipos de incidentes requieren respuestas diferentes.
+
+Vectores de Ataque
+
+Una organización debe estar preparada para manejar cualquier incidente, pero debe centrarse en los tipos más comunes de incidentes para poder resolverlos con rapidez. Estos son algunos de los tipos de vectores de ataque más comunes:
+
+* **Web** - Cualquier ataque que se inicia desde un sitio web o una aplicación alojada en un sitio web.
+* **Correo electrónico** - Cualquier ataque que se inicia desde un correo electrónico o archivo adjunto de correo electrónico.
+* **Pérdida o robo** - Cualquier equipo que use la organización, como una computadora portátil o de escritorio, o un smartphone, pueden proporcionar la información necesaria para que alguien inicie un ataque.
+* **Suplantación** - Cuando se sustituye a alguien o algo con intenciones maliciosas.
+* **Desgaste** - Cualquier ataque que utiliza la fuerza bruta para atacar dispositivos, redes o servicios.
+* **Medios** - Cualquier ataque que se inicie con medios de almacenamiento externos o extraíbles.
+
+Detección
+
+Algunos incidentes son fáciles de detectar, mientras que otros pueden pasar inadvertidos durante meses. Es posible que la detección de incidentes de seguridad sea la fase más difícil en el proceso de respuesta ante los incidentes. Los incidentes se detectan con muchos métodos diferentes y no todos son muy detallados ni claros. Hay métodos automatizados de detección, como el software antivirus o un IDS. También hay métodos manuales mediante informes de usuario.
+
+Es importante determinar con precisión el tipo de incidente y la magnitud de sus efectos. Las señales que indican un incidente se clasifican en dos categorías:
+
+* **Precursor** - Es una señal que indica que un incidente podría ocurrir en el futuro. Cuando se detectan los precursores, un ataque puede evitarse modificando las medidas de seguridad para abordar específicamente el tipo de ataque detectado. Ejemplos de precursores son las entradas del registro que muestran una respuesta a un análisis de puertos, o una vulnerabilidad recién descubierta en el servidor de web de la organización.
+* **Indicador** - Es una señal que indica que un incidente podría haber ocurrido o está ocurriendo actualmente. Algunos ejemplos de indicadores son un host que se infectó con malware, varios inicios de sesión incorrectos de origen desconocido, o una alerta de IDS.
+
+Análisis
+
+El análisis de incidentes es difícil porque no todos los indicadores son exactos. En un mundo perfecto, cada indicador debería analizarse para saber si es exacto. Esto es casi imposible debido a la cantidad y variedad de incidentes registrados e informados. El uso de algoritmos complejos y aprendizaje mecanizado ayuda, en ocasiones, a determinar la validez de los incidentes de seguridad. Esto es más frecuente en organizaciones grandes que sufren miles o incluso millones de incidentes a diario. Un método que puede utilizarse es la creación de perfiles de la red y el sistema. La creación de perfiles consiste en medir las características de la actividad prevista en dispositivos y sistemas de redes para que los cambios se puedan identificar más fácilmente.
+
+Cuando un indicador de cambio es exacto, no significa necesariamente que se haya producido un incidente de seguridad. Algunos indicadores tienen lugar por otros motivos además de la seguridad. Por ejemplo, un servidor que deja de funcionar continuamente puede tener una memoria RAM deficiente en lugar de estar sufriendo un ataque de desbordamiento del búfer. Para estar seguros, incluso los síntomas ambiguos o contradictorios deben analizarse para determinar si ha ocurrido un incidente de seguridad real. El CSIRT debe reaccionar rápidamente para validar y analizar los incidentes. Esto se realiza siguiendo un proceso predefinido y documentando cada paso.
+
+Definición del alcance
+
+Cuando el CSIRT cree que se ha producido un incidente, debe realizar inmediatamente un análisis inicial para determinar el alcance de los hechos, por ejemplo, qué redes, sistemas o aplicaciones se vieron afectados, qué o quién originó el incidente y cómo está ocurriendo. Esta actividad de determinación del alcance debe proporcionar información suficiente para que el equipo priorice las actividades posteriores, como la contención del incidente y un análisis más profundo de los efectos del incidente.
+
+Notificación de los incidentes
+
+Cuando se analiza y prioriza un incidente, el equipo de respuesta ante los incidentes debe notificar a las personas interesadas y partes externas para que todos los que necesitan involucrarse desempeñen sus funciones. Algunos ejemplos de las personas a las que debe notificarse normalmente son los siguientes:
+
+* Director General de Información (CIO)
+* Director de seguridad informática
+* Director local de seguridad informática
+* Otros equipos de respuesta ante los incidentes dentro de la organización
+* Equipos externos de respuesta ante los incidentes (si corresponde)
+* Propietario del sistema
+* Recursos Humanos (para casos que involucran a empleados, como el acoso por correo electrónico)
+* Relaciones públicas (para los incidentes que pueden generar publicidad)
+* Departamento de asuntos legales (para los incidentes que podría tener ramificaciones legales)
+* US-CERT (obligatorio en el caso de los organismos federales y los sistemas utilizados en nombre del gobierno federal)
+* Autoridad encargada del orden público (si corresponde)
+
+
+
+## 6.4.7 Contención, Erradicación y Recuperación
+
+#### Fase de Contención, Erradicación y Recuperación
+
+<figure><img src="../../.gitbook/assets/image (61).png" alt=""><figcaption></figcaption></figure>
+
+Después de detectar un incidente de seguridad y realizar análisis suficientes para determinar que es válido, se lo debe contener a fin de decidir qué hacer al respecto. Es necesario definir estrategias y procedimientos para la contención de incidentes antes de que un incidente ocurra e implementarlas antes de que el daño se propague.
+
+### Estrategia de contención
+
+Para cada tipo de incidente, se debe crear e imponer una estrategia de contención. Estas son algunas condiciones para determinar el tipo de estrategia que se debe crear para cada tipo de incidente:
+
+* ¿Cuánto tiempo se demorará en implementar y completar una solución?
+* ¿Cuánto tiempo y cuántos recursos se necesitarán para implementar la estrategia?
+* ¿Cuál es el proceso para preservar la evidencia?
+* ¿Se puede redirigir a un atacante hacia un sandbox para que el CSIRT pueda documentar de manera segura la metodología del atacante?
+* ¿Cuál será el impacto en la disponibilidad de los servicios?
+* ¿Cuál es la magnitud del daño en los recursos o activos?
+* ¿Cuán efectiva es la estrategia?
+
+Durante la contención, se pueden producir más daños. Por ejemplo, no siempre es recomendable desconectar el host atacado de la red. El proceso malicioso podría avisar de esta desconexión al controlador de CnC y desencadenar un borrado de datos o la encriptación del objetivo. Aquí es donde la experiencia y los conocimientos pueden ayudar a contener un incidente que no se contemple en el alcance de la estrategia de contención.
+
+### Evidencia
+
+Durante un incidente, debe recopilarse evidencia para resolverlo. La evidencia también es importante para la posterior investigación por parte de las autoridades. Es fundamental disponer de documentación clara y concisa relativa a la preservación de la evidencia. Para que la evidencia sea admisible en un tribunal, su recolección debe ajustarse a reglas específicas. Después de recopilar la evidencia, se debe explicar correctamente. A esto se lo conoce como cadena de custodia. Estos son algunos de los elementos más importantes que deben registrarse cuando se documenta evidencia utilizada en la cadena de custodia:
+
+* Ubicación de la recuperación y el almacenamiento de toda la evidencia
+* Los criterios de identificación de la evidencia, como el número de serie, la dirección MAC, el nombre de host o la dirección IP
+* Información de identificación para todas las personas que participaron en la recopilación o manipulación de la evidencia
+* Hora y fecha en que se recopiló la evidencia y cada vez que se manipuló
+
+Es fundamental capacitar a cualquier persona involucrada en el manejo de evidencia sobre cómo protegerla adecuadamente.
+
+### Identificación del Atacante
+
+La identificación de los atacantes no es tan importante como contener y erradicar el ataque, y recuperar los hosts y servicios. Sin embargo, identificar a los atacantes minimizará el impacto en los activos y servicios esenciales de la empresa. Estas son algunas de las acciones más importantes que pueden realizarse para intentar identificar un host atacante durante un incidente de seguridad:
+
+* Utilizar bases de datos de incidentes para investigar actividades relacionadas. Esta base de datos puede ser interna o estar ubicada en organizaciones que recogen datos de otras organizaciones y los reúnen en bases de datos de incidentes, como la base de datos de la comunidad de VERIS.
+* Validar la dirección IP del atacante para determinar si es viable. El host puede responder a una solicitud de conexión o no hacerlo. Esto puede ocurrir porque el host se configuró para ignorar las solicitudes o porque la dirección ya se reasignó a otro host.
+* Utilizar un motor de búsqueda en Internet para obtener más información sobre el ataque. Es posible que otra organización o individuo haya publicado información sobre un ataque desde la dirección IP de origen identificada.
+* Monitorear los canales de comunicación que algunos atacantes usan, como IRC. Dado que los usuarios pueden ocultarse en el anonimato en los canales de IRC, es posible que hablen sobre los ataques en estos canales. A menudo, la información recopilada gracias a este tipo de monitoreo es engañosa y debe tratarse como indicios, no hechos.
+
+### Erradicación, recuperación y corrección
+
+Después de la contención, el primer paso para la erradicación consiste en identificar todos los hosts que necesitan correcciones. Se deben eliminar todos los efectos del incidente de seguridad. Esto incluye las infecciones de malware y las cuentas de usuario atacadas. También se deben aplicar correcciones o parches en todas las vulnerabilidades que el atacante aprovechó, de modo que el incidente no se repita.
+
+Para recuperar los hosts, deben usarse copias de respaldo limpias y recientes, o se deben reconstruir los hosts con medios de instalación si no hay copias de seguridad disponibles o también se vieron afectadas. También, deben implementarse completamente actualizaciones y parches en los sistemas operativos y el software instalado en todos los hosts. Deben modificarse todas las contraseñas de hosts y contraseñas de sistemas esenciales según la política de seguridad de las contraseñas. Este puede ser un buen momento para validar y actualizar la seguridad de la red, las estrategias de respaldo y las políticas de seguridad. Los atacantes suelen repetir los ataques en los sistemas o utilizan un ataque similar dirigido a recursos adicionales; por lo tanto, es necesario prevenir esto lo mejor posible. Hace falta concentrarse en lo que pueda repararse rápidamente y dar prioridad a las operaciones y los sistemas esenciales.
+
+
+
+6.4.8 Actividades Posteriores al Incidente
+
+#### Fase de Actividad Post-Incidente
+
+<figure><img src="../../.gitbook/assets/image (62).png" alt=""><figcaption></figcaption></figure>
+
+Después de que las actividades de respuesta ante los incidentes erradican las amenazas y la organización comienza a recuperarse de los efectos del ataque, es importante mirar hacia atrás y reunirse periódicamente con todas las personas involucradas para analizar los acontecimientos que tuvieron lugar y las acciones de todos los individuos durante el manejo del incidente. Esto proporcionará una plataforma para aprender qué se hizo bien, qué se hizo mal, qué se podría cambiar y qué se debe mejorar.
+
+**Cómo aprovechar las lecciones para fortalecerse**
+
+Después de manejar un incidente importante, la organización debe llevar a cabo una reunión de “lección aprendida” para examinar la eficacia del proceso de manejo de incidentes e identificar el fortalecimiento que hace falta en los controles y las prácticas vigentes de seguridad. Algunas buenas preguntas para formularse durante la reunión son las siguientes:
+
+* ¿Exactamente qué pasó y cuándo?
+* ¿Con qué eficacia trabajaron el personal y la dirección durante el manejo del incidente?
+* ¿Se respetaron los procedimientos documentados? ¿Fueron los adecuados?
+* ¿Qué información se necesitó antes?
+* ¿Se tomaron medidas o acciones que podrían haber inhibido la recuperación?
+* ¿Qué harían de manera diferente el personal y la dirección la próxima vez que ocurra un incidente similar?
+* ¿Cómo se podría mejorar el intercambio de información con otras organizaciones?
+* ¿Qué medidas correctivas pueden evitar incidentes similares en el futuro?
+* ¿Qué precursores o indicadores deben tenerse en cuenta para detectar incidentes similares en el futuro?
+* ¿Qué otras herramientas o recursos se necesitan para detectar, analizar y mitigar incidentes futuros?
+
+
+
+6.4.9 Recolección y Retención de Datos de Incidentes
+
+Gracias a las reuniones de “lecciones aprendidas”, los datos recopilados pueden utilizarse para determinar el costo de un incidente por razones presupuestarias, así como determinar la eficacia del CSIRT e identificar las posibles debilidades de seguridad en todo el sistema. Los datos recopilados deben ser procesables. Solo deben recopilarse datos que puedan utilizarse para definir y refinar el proceso de manejo de incidentes.
+
+Una mayor cantidad de incidentes manejados puede demostrar que algo en la metodología de respuesta ante los incidentes no está funcionando correctamente y debería mejorarse. También podría demostrar incompetencia de parte del CSIRT. Una menor cantidad de incidentes puede demostrar que la seguridad de red y hosts ha mejorado. También podría demostrar una falta de detección de incidentes. Los recuentos individuales de cada tipo de incidente pueden resultar efectivos para mostrar las fortalezas y debilidades del CSIRT y de las medidas de seguridad implementadas. Estas subcategorías pueden ayudar a definir dónde residen las debilidades, en lugar de indicar solamente que existen.
+
+El tiempo de cada incidente proporciona información sobre la cantidad total de mano de obra utilizada y el tiempo total que tomó cada fase del proceso de respuesta ante los incidentes. El tiempo que demoró la primera respuesta también es importante, así como cuánto tardó la notificación del incidente y su derivación fuera de la organización si fuera necesario.
+
+Es importante realizar una evaluación objetiva de cada incidente. La respuesta ante un incidente resuelto puede analizarse para determinar su eficacia. La publicación especial 800-61 de NIST proporciona los siguientes ejemplos de actividades que se realizan durante la evaluación objetiva de un incidente:
+
+* Revisar los registros, formularios, informes y otra documentación del incidente para ver si se respetan las políticas y los procedimientos de respuesta ante los incidentes.
+* Identificar qué precursores e indicadores del incidente se registraron para determinar la eficacia del registro y la identificación del incidente.
+* Determinar si el incidente causó daños antes de detectarlo.
+* Determinar si se identificó la causa real del incidente e identificar el vector de ataque, las vulnerabilidades aprovechadas y las características de los sistemas, las redes y las aplicaciones que sufrieron el ataque.
+* Determinar si el incidente ya ocurrió antes.
+* Calcular el daño monetario aproximado del incidente (por ejemplo, información y procesos empresariales esenciales afectados por el incidente).
+* Medir la diferencia entre la evaluación inicial del impacto inicial y la evaluación final del impacto.
+* Identificar qué medidas podrían haber evitado el incidente (si hubiera).
+* Valorar subjetivamente cada incidente exige que los miembros del equipo de respuesta ante los incidentes evalúen su propio desempeño, así como el de otros miembros del equipo y de todo el equipo. Otra valiosa fuente de información es el propietario de un recurso atacado, ya que este puede determinar si cree que el incidente se manejó con eficacia y si el resultado fue satisfactorio.
+
+Cada organización debe tener desarrollada una política que detalle cuánto tiempo debe conservarse la evidencia de un incidente. A menudo, la evidencia se conserva durante muchos meses o años después de que ocurre el incidente. En algunos casos, las normas de cumplimiento pueden exigir el período de retención. Estos son algunos de los factores que determinan la retención de evidencia:
+
+**Procesamiento**\
+Cuando se procesa judicialmente a un atacante por un incidente de seguridad, la evidencia debe conservarse hasta después de finalizar con todas las acciones legales. Esto puede ser durante varios meses o muchos años. En acciones judiciales, no se debe pasar por alto ni subestimar ningún tipo de evidencia. La política de una organización podría indicar que cualquier evidencia relativa a un incidente que haya derivado en acciones legales nunca debe eliminarse ni destruirse.
+
+**Tipo de Datos**\
+Una organización puede especificar qué tipos específicos de datos deben mantenerse durante un período determinado. Elementos como correo electrónico o texto deben conservarse solo durante 90 días. Los datos más importantes, como los que se utilizan en la respuesta ante un incidente (que no haya derivado en acciones legales), deben conservarse durante tres años o más.
+
+**Costo**\
+Si hay mucho hardware y muchos medios de almacenamiento que deben almacenarse durante un tiempo prolongado, eso puede ser costoso. Es necesario recordar que, a medida que la tecnología cambia, deben almacenarse también los dispositivos funcionales que sean compatibles con hardware y medios de almacenamiento obsoletos.
+
+## 6.4.10 Requisitos de Informes e Intercambio de Información
+
+El equipo legal debe consultar las regulaciones gubernamentales para determinar con exactitud la responsabilidad de la organización de informar el incidente. Además, los directivos necesitarán determinar qué comunicación adicional es necesaria con otras partes interesadas, como clientes, proveedores, partners, etc.
+
+Más allá de los requisitos legales y las consideraciones sobre las partes interesadas, el NIST recomienda que una organización trabaje en conjunto con otras para compartir información sobre incidentes. Por ejemplo, la organización podría registrar el incidente en la base de datos de la comunidad de VERIS.
+
+Las recomendaciones fundamentales del NIST para el intercambio de información son las siguientes:
+
+* Planificar la coordinación de incidentes con participantes externos antes de que ocurran incidentes.
+* Consultar con el departamento legal antes de iniciar cualquier tarea de coordinación.
+* Intercambiar información sobre el incidente durante todo el ciclo de vida de respuesta ante los incidentes.
+* Intentar automatizar al máximo el proceso de intercambio de información.
+* Sopesar los beneficios del intercambio de información con las desventajas de compartir información confidencial.
+
+Compartir con otras organizaciones la mayor cantidad posible de información relevante sobre el incidente.
+
+## 6.5 Recuperación ante Desastres
+
+6.5.2 Tipos de Desastres
+
+Un desastre incluye cualquier evento de causa natural o humana que daña los activos o la propiedad y perjudica la capacidad de la organización para seguir operando.
+
+**Seleccione las imágenes para aprender más.**
+
+**Desastres naturales**
+
+* Los desastres **geológicos** como los terremotos, derrumbes, erupciones volcánicas y tsunamis.
+* Los desastres **meteorológicos** como los huracanes, tornados, tormentas de nieve, rayos y granizo.
+* Los desastres **sanitarios** incluyen enfermedades generalizadas, cuarentenas y pandemias.
+* **Los desastres variados** incluyen incendios, inundaciones, tormentas solares y avalanchas.
+
+Desastres provocados por el hombre
+
+* Los eventos laborales como las huelgas, paros y recesiones.
+* Los eventos sociopolíticos como el vandalismo, bloqueos, protestas, sabotaje, terrorismo y guerra.
+* Los eventos materiales como derrames e incendios peligrosos.
+* Las interrupciones de los servicios como los cortes de electricidad, interrupciones en las comunicaciones, escasez de combustible y lluvia radiactiva.
+
+## 6.5.3 Plan de Recuperación ante Desastres
+
+Una organización pone su **Plan de Recuperación ante Desastres (DRP)** en acción mientras el desastre está en curso y los empleados intentan proteger los sistemas críticos en línea.
+
+El DRP incluye las actividades que realiza la organización para evaluar, salvar, reparar y restaurar instalaciones o activos dañados.
+
+Para crear el DRP, responda las siguientes preguntas:
+
+* ¿Quién es responsable de este proceso?
+* ¿Qué necesita la persona para realizar el proceso?
+* ¿Dónde realiza la persona el proceso?
+* ¿Cuál es el proceso?
+* ¿Por qué es importante el proceso?
+
+
+
+## 6.5.5 Implementación de Controles de Recuperación ante Desastres
+
+Los controles de **recuperación tras un desastre** minimizan los efectos de un desastre para garantizar que los recursos y procesos empresariales puedan reanudar la operación.
+
+**Controles preventivos**\
+Las medidas preventivas incluyen controles que impiden que ocurra un desastre. Su objetivo es identificar y mitigar los riesgos.
+
+**Controles de detección**\
+Las medidas de detección incluyen controles que detectan eventos no deseados. Estas medidas descubren nuevas posibles amenazas.
+
+**Controles correctivos**\
+Las medidas correctivas incluyen controles que restauran el sistema después de un evento o desastre.
+
+
+
+## 6.5.7 Planificación de la Continuidad del Negocio
+
+La continuidad de los negocios es uno de los conceptos más importantes de la seguridad informática. Tener planes en marcha garantizará la continuidad del negocio independientemente de lo que pueda ocurrir.
+
+Un plan de continuidad empresarial (BCP) es un plan más amplio que plan de recuperación ante desastres (DRP), dado que incluye el envío de sistemas críticos a otra ubicación mientras la reparación de la instalación original está en curso. En tal escenario, el personal continúa realizando todos los procesos empresariales de manera alternativa hasta que se reanudan las operaciones normales.
+
+La creación de un plan de continuidad comercial comienza con la realización de un análisis de impacto comercial (BIA) para identificar procesos comerciales críticos, recursos y relaciones entre sistemas. El BIA se centra en las consecuencias de la interrupción de funciones comerciales críticas y examina las consideraciones clave que se enumeran a continuación.
+
+**Seleccione los encabezados para obtener más información sobre cada consideración.**
+
+* Objetivos de tiempo de recuperación (RTOs)\
+  La cantidad máxima de tiempo tolerable que un sistema, red o aplicación puede no estar disponible después de una falla o un desastre.
