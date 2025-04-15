@@ -100,7 +100,7 @@ Si miramos en un post dice, **"Comenczamos la carrera de ingenieria"** y sale la
 
 Parece que se trata de la Universidad de Jaén.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Evidencia de esa universidad</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Evidencia de esa universidad</p></figcaption></figure>
 
 
 

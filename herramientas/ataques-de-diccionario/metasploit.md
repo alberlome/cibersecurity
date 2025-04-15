@@ -16,7 +16,7 @@ Vale ya tengo levantada la base de datos postgresql
 
 
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Como encender la base de datos postgresql y revisar su estado</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Como encender la base de datos postgresql y revisar su estado</p></figcaption></figure>
 
 Iniciar metasploit lanzando el siguiente comando
 

@@ -194,7 +194,7 @@ ISO 27002 - **Controles**
 
 Los controles establecen cómo lograr los objetivos de control de una organización. Establecen pautas para implementar, mantener y mejorar la administración de la seguridad de la información en una organización.
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 

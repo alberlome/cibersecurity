@@ -27,7 +27,7 @@ Abrimos la ruta de la carpeta, descomprimimos el fichero ZIP y tenemos dos fiche
 
 Ahora modificaremos los permisos de la máquina para que disponga de permisos de ejecución y la ejecutaremos en nuestra Terminal.
 
-<div align="left"><figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Ejecución de la máquina en nuestro Docker local</p></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Ejecución de la máquina en nuestro Docker local</p></figcaption></figure></div>
 
 Una vez ejecutada, como no tenemos Docker lo primero que hace es instalarlo.
 

@@ -31,13 +31,13 @@ Visitamos la URL robots.txt
 
 Vamos a usar la herramienta GoBuster, para buscar si tiene directorios ocultos.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>Output comando GoBuster</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption><p>Output comando GoBuster</p></figcaption></figure>
 
 He buscado tanto en directorios como en ficheros y me ha encontrado solo los siguientes directorios. /0 y /admin, este último me redirige a un sitio web llamado jaulacon2025.thl
 
 He revisado con Wappalyzer lo que está corriendo en la máquina objetivo.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption><p>Output Wappalyzer</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Output Wappalyzer</p></figcaption></figure>
 
 Podemos ver que está usando un CMS poco común llamado "Bludit", vamos a buscar si existe alguna vulnerabilidad para ese CMS.
 
