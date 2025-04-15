@@ -79,3 +79,4 @@
   * [Módulo 1: Gestión y Cumplimiento](cisco-networking-academy/administracion-de-amenazas-ciberneticas/modulo-1-gestion-y-cumplimiento.md)
   * [Módulo 2: Pruebas de Seguridad de la Red](cisco-networking-academy/administracion-de-amenazas-ciberneticas/modulo-2-pruebas-de-seguridad-de-la-red.md)
   * [Módulo 3: Inteligencia contra las Amenazas](cisco-networking-academy/administracion-de-amenazas-ciberneticas/modulo-3-inteligencia-contra-las-amenazas.md)
+  * [Módulo 4: Evaluación de vulnerabilidades de terminales](cisco-networking-academy/administracion-de-amenazas-ciberneticas/modulo-4-evaluacion-de-vulnerabilidades-de-terminales.md)
