@@ -204,7 +204,7 @@ Los controles establecen cómo lograr los objetivos de control de una organizaci
 
 @Apollo se está preparando para una próxima auditoría del SGSI, pero aún queda trabajo por hacer. Necesitan desarrollar controles para algunos de sus objetivos de control. ¿Puede ayudarlos a especificar El control adecuado para cada objetivo de control?
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 1.3.5 ISO 27000 y la tríada de CIA
 
@@ -212,13 +212,13 @@ La norma ISO 27000 es un marco de trabajo universal aplicable a todo tipo de org
 
 La mayoría de las organizaciones hace esto mediante la elaboración de una declaración de aplicabilidad (SOA) que le permite adaptar los objetivos de control y los controles disponibles para satisfacer mejor sus prioridades en cuanto a **confidencialidad**, **integridad** y **disponibilidad**.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1.3.7 ISO 27000 y los Estados de los Datos
 
 Los controles ISO abordan específicamente los objetivos de seguridad de los datos en cada uno de sus tres estados: **en proceso**, **en reposo** (en almacenamiento) y **en tránsito**. &#x20;
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 1.3.8 ISO 27000 y Salvaguardas
 

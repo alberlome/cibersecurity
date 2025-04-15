@@ -88,7 +88,7 @@ Primero poner a escuchar a Burp Suite el navegador mediante un proxy.
 
 Seleccionar la opción de "REPEATER" para poder enviar cabeceras.
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Enviar al "Repetidor"</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Enviar al "Repetidor"</p></figcaption></figure>
 
 Una vez que estamos en repeater, volveremos a enviar una petición.
 

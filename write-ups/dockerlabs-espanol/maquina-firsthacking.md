@@ -34,11 +34,11 @@ Podemos ver que el puerto 21 correspondiente al servicio del FTP, está ejecutan
 
 Al intentar conectarme con el usuario root, poniendo una contraseña _random_, la conexión es rechazada. Lo que me hace pensar si existirá algún tipo de vulnerabilidad para el servicio FTP en la versión "_vsftpd_ 2.3.4", vamos a buscar en Google.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Búsqueda en Google de la versión de SFTPD</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Búsqueda en Google de la versión de SFTPD</p></figcaption></figure>
 
 Podemos ver que existe algún tipo de vulnerabilidad relacionada con ese servicio ftp, y posiblemente se trate de un _"backdoor command execution"_ , vamos a seguir investigando.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption><p>Captura pantalla web de rapid7</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Captura pantalla web de rapid7</p></figcaption></figure>
 
 Podemos ver en la captura de pantalla que esta vulnerabilidad puede explotarse mediante un exploit en Metasploit, además de mas detalles acerca de cuando se descubrió la vulnerabilidad y de cuando fue parcheado.
 

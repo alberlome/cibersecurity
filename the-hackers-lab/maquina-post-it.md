@@ -92,7 +92,7 @@ En esta imagen podemos apreciar lo que parece un número de teléfono y habla de
 En el resto de imágenes, podemos ver el Palacio de las Telecomunicaciones que esta en la plaza Cibeles de **Madrid**.\
 
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Si miramos en un post dice, **"Comenczamos la carrera de ingenieria"** y sale la imagen de un edificio. Vamos a buscar esa imagen en Google para ver si nos da mas información.
 
@@ -106,7 +106,7 @@ Parece que se trata de la Universidad de Jaén.
 
 Probamos el usuario en X
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ![](<../.gitbook/assets/image (4) (1) (1).png>)![](<../.gitbook/assets/image (5) (1) (1).png>)\
 \

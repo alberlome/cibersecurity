@@ -41,13 +41,13 @@ He revisado con Wappalyzer lo que está corriendo en la máquina objetivo.
 
 Podemos ver que está usando un CMS poco común llamado "Bludit", vamos a buscar si existe alguna vulnerabilidad para ese CMS.
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption><p>Output exploitDB</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption><p>Output exploitDB</p></figcaption></figure>
 
 Vale podemos ver que existen múltiples exploits para este CMS, ahora nos queda averiguar la versión del CMS.
 
 Buscando la versión en el view-source del código fuente de la página web.
 
-<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>Source-code página web</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption><p>Source-code página web</p></figcaption></figure>
 
 Buscando por el nombre de versión, he visto ese fichero de bootstrap y otro de JQuery, que estaban siendo importados desde un directorio "bl-kernel", que le llama Bludit Core, así que vamos a visitar esa carpeta.
 

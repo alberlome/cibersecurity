@@ -24,7 +24,7 @@ Iniciar metasploit lanzando el siguiente comando
 msfconsole
 ```
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Output ejecutar metasploit</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Output ejecutar metasploit</p></figcaption></figure>
 
 Con el comando HELP podemos ver un montón de información, con todo lujo de detalles todo bien explicado en inglés.&#x20;
 
@@ -34,7 +34,7 @@ Lo primero de todo como es la primera vez que iniciamos Metasploit, vamos a lanz
 msfdb init
 ```
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Output comando msfdb init</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Output comando msfdb init</p></figcaption></figure>
 
 Este comando es necesario solo la primera vez que instalamos Metasploit en la máquina.
 

@@ -47,7 +47,7 @@ Debe revisar todos los registros y las configuraciones para solucionar las vulne
 
 2.1.3 - Utilidades de Diagnóstico de la Línea de Comandos
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 2.1.4 Automatización de la Seguridad
 
@@ -225,7 +225,7 @@ Por ejemplo, en tal situación, puede haber tres o cuatro equipos:
 * El equipo blanco es un equipo neutral que definir los objetivos y las reglas y supervisa el ejercicio. Los miembros del equipo blanco son menos técnicos, pero poseen conocimientos sobre gestión y cumplimiento. El equipo blanco es el árbitro de este ejercicio.
 * A veces, también hay un equipo morado, donde los miembros del equipo rojo y azul trabajan juntos para identificar vulnerabilidades y explorar formas de mejorar los controles.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 2.4.4 Avatar
 

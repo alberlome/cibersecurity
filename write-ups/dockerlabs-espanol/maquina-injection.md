@@ -22,7 +22,7 @@ ping 172.17.0.2
 
 Podemos ver que nos está retornando paquetes ICMP, así que está encendida.
 
-<div align="left"><figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Ping a la máquina víctima</p></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Ping a la máquina víctima</p></figcaption></figure></div>
 
 Ahora lanzaremos un comando nmap para comenzar con la enumeración de servicios, y puertos que tiene disponibles esta maquina.
 

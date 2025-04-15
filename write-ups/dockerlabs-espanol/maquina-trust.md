@@ -18,7 +18,7 @@ Comenzamos haciendo un ping a la máquina para ver si nos contesta.
 ping 172.18.0.2
 ```
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Respuesta al comando ping</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Respuesta al comando ping</p></figcaption></figure>
 
 Lanzamos el comando NMAP, con los parámetros -sV y -O.
 
@@ -47,7 +47,7 @@ Probamos con el comando _**whatweb**_ con el parámetro -v y nos reporta lo sigu
 whatweb 172.18.0.2 -v
 ```
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Ssalida del whatweb -v</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Ssalida del whatweb -v</p></figcaption></figure>
 
 Hice un _**dirb**_ para hallar directorios ocultos y me encontré con el siguiente output del comando.
 
@@ -125,7 +125,7 @@ Ahora deberíamos buscar los ficheros vulnarables que tenga comprometidos la má
 find / -perm -4000 -user root 2>/dev/null
 ```
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Vemos que la salida del comando nos retorna todos estos ficheros.
 
