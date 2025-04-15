@@ -22,14 +22,14 @@ ping 172.17.0.2
 
 Podemos ver que nos está retornando paquetes ICMP, así que está encendida.
 
-<div align="left"><figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Ping a la máquina víctima</p></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Ping a la máquina víctima</p></figcaption></figure></div>
 
 Ahora lanzaremos un comando nmap para comenzar con la enumeración de servicios, y puertos que tiene disponibles esta maquina.
 
 <pre class="language-bash"><code class="lang-bash"><strong>nmap -sV 172.17.0.2
 </strong></code></pre>
 
-<div align="left"><figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Nmap averiguando que servicios están disponibles</p></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Nmap averiguando que servicios están disponibles</p></figcaption></figure></div>
 
 ***
 
@@ -42,7 +42,7 @@ Hemos encontrado los siguientes puertos:&#x20;
 
 Disponemos de una conexión por SSH y un Apache, que estará sirviendo una web. Vamos a probar a entrar en esa web desde un navegador, poniendo en la URL del navegador esa dirección IP.
 
-<div align="left"><figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Web de login realizada en PHP</p></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Web de login realizada en PHP</p></figcaption></figure></div>
 
 Al entrar podemos ver un login y password. Vamos a revisar su código fuente para ver si encontramos algún indicio mas.
 
@@ -72,7 +72,7 @@ ssh dylan@172.17.0.2
 
 Ponemos la contraseña que hemos encontrado y...
 
-<div align="left"><figure><img src="../../.gitbook/assets/image (8) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/image (8) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 Buscamos los ficheros con permisos de usuario root
 
@@ -88,7 +88,7 @@ Acabamos de obtener acceso a la máquina.
 sudo env /bin/sh
 ```
 
-<div align="left"><figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 Fin de la auditoría.
 

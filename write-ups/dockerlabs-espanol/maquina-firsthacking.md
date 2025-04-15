@@ -22,7 +22,7 @@ Ok, la máquina está encendida, podemos comenzar.
 
 Primero haremos un nmap para ver que protocolos están ejecutándose en la máquina objetivo.
 
-<figure><img src="../../.gitbook/assets/image (7) (1).png" alt=""><figcaption><p>Captura comando nmap</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption><p>Captura comando nmap</p></figcaption></figure>
 
 `sC` = Equivalente a --script=default esto lanza algunos scripts simples de reconocimiento
 
@@ -30,15 +30,15 @@ Primero haremos un nmap para ver que protocolos están ejecutándose en la máqu
 
 Podemos ver que el puerto 21 correspondiente al servicio del FTP, está ejecutando la versión de _vsftdp_ 2.3.4. Podríamos intentar conectarnos por FTP a ese servicio para ver que nos retorna.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Captura comando FTP - conexión rechazada</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Captura comando FTP - conexión rechazada</p></figcaption></figure>
 
 Al intentar conectarme con el usuario root, poniendo una contraseña _random_, la conexión es rechazada. Lo que me hace pensar si existirá algún tipo de vulnerabilidad para el servicio FTP en la versión "_vsftpd_ 2.3.4", vamos a buscar en Google.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Búsqueda en Google de la versión de SFTPD</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Búsqueda en Google de la versión de SFTPD</p></figcaption></figure>
 
 Podemos ver que existe algún tipo de vulnerabilidad relacionada con ese servicio ftp, y posiblemente se trate de un _"backdoor command execution"_ , vamos a seguir investigando.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Captura pantalla web de rapid7</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Captura pantalla web de rapid7</p></figcaption></figure>
 
 Podemos ver en la captura de pantalla que esta vulnerabilidad puede explotarse mediante un exploit en Metasploit, además de mas detalles acerca de cuando se descubrió la vulnerabilidad y de cuando fue parcheado.
 
@@ -48,7 +48,7 @@ Entonces ahora nos iremos a Metasploit y usaremos el exploit para intentar obten
 msfconsole
 ```
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption><p>Salida del arranque de Metasploit</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Salida del arranque de Metasploit</p></figcaption></figure>
 
 Si es tu primera vez en _msfconsole_ y tienes que instalarla de cero, te invito a que revises esta [guía](https://ciberseguridad.alberlome.com/herramientas/ataques-de-diccionario/metasploit) para que veas como realizar la instalación correctamente.
 
@@ -60,7 +60,7 @@ Usaremos el comando searchsploit:
 searchsploit vsftpd 2.3.4
 ```
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt=""><figcaption><p>Salida del comando searchsploit</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Salida del comando searchsploit</p></figcaption></figure>
 
 Lo descargamos con el siguiente comando:
 
@@ -68,7 +68,7 @@ Lo descargamos con el siguiente comando:
 searchsploit -m unix/remote/49757.py
 ```
 
-<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1).png" alt=""><figcaption><p>Descarga del exploit </p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1).png" alt=""><figcaption><p>Descarga del exploit </p></figcaption></figure>
 
 Ahora vamos a ejecutar el exploit. Nos salimos de Metasploit. Y ejecutamos el exploit.
 
@@ -76,11 +76,11 @@ Ahora vamos a ejecutar el exploit. Nos salimos de Metasploit. Y ejecutamos el ex
 python3 49757.py 172.17.0.2
 ```
 
-<figure><img src="../../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption><p>Salida del comando</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1).png" alt=""><figcaption><p>Salida del comando</p></figcaption></figure>
 
 Para entender mejor, como hemos obtenido una _Shell_ en la máquina remota siendo root, podemos analizar el exploit que es lo que hace, abriendo su código con nano, _Vim_, o tu editor preferido.
 
-<figure><img src="../../.gitbook/assets/image (8) (1).png" alt=""><figcaption><p>Código fuente del exploit que acabamos de utilizar</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1) (1).png" alt=""><figcaption><p>Código fuente del exploit que acabamos de utilizar</p></figcaption></figure>
 
 Simplemente podemos ver que está escrito en Python, (por como se define la función "_handler_").
 

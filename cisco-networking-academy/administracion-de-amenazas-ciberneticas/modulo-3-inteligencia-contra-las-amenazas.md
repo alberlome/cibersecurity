@@ -32,7 +32,7 @@ Cisco proporciona blogs sobre temas relacionados con la seguridad, redactados po
 
 Los servicios de inteligencia de amenazas permiten el intercambio de información, como vulnerabilidades, indicadores de riesgo (IOC, Indicator of compromise) y técnicas de mitigación. Esta información no solo se comparte con el personal, sino también con los sistemas de seguridad. A medida que surgen las amenazas, los servicios de inteligencia de amenazas crean y distribuyen reglas de firewalls e IOC para los dispositivos que se han suscrito al servicio.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 Uno de estos servicios es Cisco Talos Threat Intelligence Group (Grupo de Inteligencia de Amenazas), que se muestra en la imagen. Cisco Talos es uno de los equipos de inteligencia de amenazas comerciales más grandes del mundo, compuesto por investigadores, analistas e ingenieros de clase mundial. El objetivo de Talos es ayudar a proteger los usuarios, datos e infraestructura empresariales de adversarios activos. El equipo de Talos recopila información sobre las amenazas activas, existentes y emergentes. Luego, proporciona a sus suscriptores una protección completa contra ataques y malware.
 
@@ -86,7 +86,7 @@ Estos estándares abiertos proporcionan las especificaciones que colaboran al in
 
 La Plataforma de Intercambio de Información sobre Malware (MISP, Malware Information Sharing Platform) es una plataforma de código abierto para compartir indicadores de compromiso para amenazas recién descubiertas. El MISP cuenta con el apoyo de la Unión Europea y es utilizado por más de 6.000 organizaciones de todo el mundo. MISP permite el uso compartido automatizado de IOC entre personas y máquinas mediante STIX y otros formatos de exportación.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3.2.6 Plataformas de Inteligencia de Amenazas
 
