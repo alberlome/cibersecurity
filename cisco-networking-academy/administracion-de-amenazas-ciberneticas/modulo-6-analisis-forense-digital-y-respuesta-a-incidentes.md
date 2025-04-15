@@ -696,3 +696,54 @@ La creación de un plan de continuidad comercial comienza con la realización de
 
 * Objetivos de tiempo de recuperación (RTOs)\
   La cantidad máxima de tiempo tolerable que un sistema, red o aplicación puede no estar disponible después de una falla o un desastre.
+*   Objetivos del punto de recuperación (RPOs)
+
+    La vida útil promedio de un activo determinado antes de que falle.
+*   Tiempo promedio para reparar (MTTR)
+
+    El tiempo promedio requerido para reparar un componente fallado.
+*   Tiempo medio entre fallas (MTBF)
+
+    El tiempo promedio que transcurre entre una falla y la siguiente.
+
+
+
+## 6.5.8 Consideraciones de Continuidad de Negocios
+
+Los controles de continuidad de los negocios son mucho más que una simple copia de respaldo de los datos y redundancia del hardware. Las organizaciones necesitan empleados para configurar y operar correctamente los sistemas. Los datos pueden ser irrelevantes hasta que proporcionan información.
+
+Una organización debe tener en cuenta lo siguiente:
+
+* La asignación de las personas adecuadas en los lugares correctos.
+* Configuraciones de la documentación.
+* Establecimiento de canales alternos de comunicación tanto de voz como de datos.
+* El suministro eléctrico.
+* Identificando todas las dependencias para las aplicaciones y los procesos para su correcta comprensión.
+* Entendiendo cómo realizar las tareas automatizadas manualmente.
+
+## 6.5.9 Mejores Prácticas de Continuidad de Negocios
+
+El Instituto Nacional de Estándares y Tecnología (NIST) desarrolló mejores prácticas en relación con la continuidad de los negocios.
+
+* Desarrolle la declaración de política: Escriba una política que proporcione orientación para desarrollar un plan de continuidad de los negocios y asigne roles para realizar tareas.
+* Realice la evaluación de impacto comercial: identifique los sistemas y procesos críticos y priorícelos en función de la necesidad.
+* Calcule el riesgo: Identificar vulnerabilidades, amenazas y calcular riesgos.
+* Identifique controles preventivos: Identificar e implementar controles y contramedidas para reducir el riesgo.
+* Desarrollar estrategias de recuperación: Elaborar métodos para recuperar rápidamente los sistemas críticos.
+* Desarrollar el plan de contingencia: Escribir procedimientos para mantener la organización en funcionamiento durante un estado caótico.
+* Pruebe el plan: verifique la eficacia del plan en situaciones en tiempo real.
+* Mantenga el plan: Actualícelo periódicamente.
+
+## 6.5.10 Ejerciendo su Plan de Recuperación ante Desastres
+
+Hay varios métodos diferentes disponibles para capacitar al personal y probar el plan de recuperación ante desastres de la organización.
+
+*   **Ejercicios de mesa**
+
+    El más simple es un ejercicio de mesa en el que los participantes se sientan alrededor de una mesa con un facilitador que proporciona información relacionada con un incidente del escenario y los procesos que se están examinando. No se invocan procesos o procedimientos reales; solo se discuten. Esto puede dar lugar a que se den cuenta de que cierto tipo de incidente no está cubierto actualmente en los planes existentes.
+*   **Pruebas funcionales**
+
+    Otro tipo de ejercicio es una prueba funcional donde se prueban ciertos aspectos de un plan para ver qué tan bien funcionan (y qué tan bien preparado está el personal).
+*   **Ejercicios operativos**
+
+    Los más extremos son los ejercicios operativos completos o simulaciones. Estos están diseñados para interrumpir los servicios para verificar que todos los aspectos de un plan estén en su lugar y sean suficientes para responder al tipo de incidente que se está simulando.
