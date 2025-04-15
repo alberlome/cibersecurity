@@ -77,3 +77,4 @@
 
 * [Administración de Amenazas Cibernéticas](cisco-networking-academy/administracion-de-amenazas-ciberneticas/README.md)
   * [Módulo 1: Gestión y Cumplimiento](cisco-networking-academy/administracion-de-amenazas-ciberneticas/modulo-1-gestion-y-cumplimiento.md)
+  * [Módulo 2: Pruebas de Seguridad de la Red](cisco-networking-academy/administracion-de-amenazas-ciberneticas/modulo-2-pruebas-de-seguridad-de-la-red.md)
