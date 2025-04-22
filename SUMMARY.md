@@ -21,6 +21,10 @@
   * [Máquina JaulaCon2025](the-hackers-lab/maquina-jaulacon2025.md)
 * [🛡️ TSS Ciberseguridad](tss-ciberseguridad.md)
 
+## Artículos
+
+* [El Movimiento “Hacking is Not a Crime” y la Revalorización del Término "Hacker"](articulos/el-movimiento-hacking-is-not-a-crime-y-la-revalorizacion-del-termino-hacker.md)
+
 ## Academia Burp Suite
 
 * [¿Qué es BurpSuite?](academia-burp-suite/que-es-burpsuite.md)
@@ -82,7 +86,3 @@
   * [Módulo 4: Evaluación de vulnerabilidades de terminales](cisco-networking-academy/administracion-de-amenazas-ciberneticas/modulo-4-evaluacion-de-vulnerabilidades-de-terminales.md)
   * [Módulo 5: Administración de Riesgos y Controles de Seguridad](cisco-networking-academy/administracion-de-amenazas-ciberneticas/modulo-5-administracion-de-riesgos-y-controles-de-seguridad.md)
   * [Módulo 6: Análisis Forense Digital y Respuesta a Incidentes](cisco-networking-academy/administracion-de-amenazas-ciberneticas/modulo-6-analisis-forense-digital-y-respuesta-a-incidentes.md)
-
-## Artículos
-
-* [El Movimiento “Hacking is Not a Crime” y la Revalorización del Término "Hacker"](articulos/el-movimiento-hacking-is-not-a-crime-y-la-revalorizacion-del-termino-hacker.md)
