@@ -84,7 +84,7 @@ Tambien he probado instalando BURP SUITE Community Edition. Y siguiendo los paso
 
 Primero poner a escuchar a Burp Suite el navegador mediante un proxy.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Salida por pantalla de la petición a la web</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Salida por pantalla de la petición a la web</p></figcaption></figure>
 
 Seleccionar la opción de "REPEATER" para poder enviar cabeceras.
 

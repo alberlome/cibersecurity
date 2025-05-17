@@ -86,7 +86,7 @@ Estos estándares abiertos proporcionan las especificaciones que colaboran al in
 
 La Plataforma de Intercambio de Información sobre Malware (MISP, Malware Information Sharing Platform) es una plataforma de código abierto para compartir indicadores de compromiso para amenazas recién descubiertas. El MISP cuenta con el apoyo de la Unión Europea y es utilizado por más de 6.000 organizaciones de todo el mundo. MISP permite el uso compartido automatizado de IOC entre personas y máquinas mediante STIX y otros formatos de exportación.
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3.2.6 Plataformas de Inteligencia de Amenazas
 

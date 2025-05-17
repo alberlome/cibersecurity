@@ -26,7 +26,7 @@ A continuación se describen las cuatro fases básicas del proceso forense de pr
 
 #### **El Proceso Forense de Evidencia Digital**
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 Paso 1. Recolección\
 Esta es la identificación de posibles fuentes de datos forenses y la obtención, el manejo y el almacenamiento de esos datos. Esta etapa es fundamental porque se debe tener especial cuidado para no dañar, perder u omitir datos importantes.
@@ -63,7 +63,7 @@ IETF RFC 3227 proporciona pautas para la recolección de evidencia digital. Desc
 
 #### Prioridad de Recolección de Evidencia
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Un ejemplo de recolección de evidencia desde la más volátil a la menos volátil es el siguiente:
 
@@ -126,7 +126,7 @@ La figura muestra un análisis de una explotación de ransomware de la excelente
 
 #### Matriz MITRE ATT\&CK para una Explotación de Ransomware
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 

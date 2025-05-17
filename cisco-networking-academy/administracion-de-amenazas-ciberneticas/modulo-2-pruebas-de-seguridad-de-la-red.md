@@ -79,7 +79,7 @@ Una organización puede integrar SOAR en su solución SIEM.
 
 
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2.3.1 Herramientas de Pruebas de Red
 
@@ -225,7 +225,7 @@ Por ejemplo, en tal situación, puede haber tres o cuatro equipos:
 * El equipo blanco es un equipo neutral que definir los objetivos y las reglas y supervisa el ejercicio. Los miembros del equipo blanco son menos técnicos, pero poseen conocimientos sobre gestión y cumplimiento. El equipo blanco es el árbitro de este ejercicio.
 * A veces, también hay un equipo morado, donde los miembros del equipo rojo y azul trabajan juntos para identificar vulnerabilidades y explorar formas de mejorar los controles.
 
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2.4.4 Avatar
 
