@@ -23,6 +23,7 @@
 
 ## Artículos
 
+* [¿Cómo proteger tu coche frente al robo a través del puerto OBD2?](articulos/como-proteger-tu-coche-frente-al-robo-a-traves-del-puerto-obd2.md)
 * [El Movimiento “Hacking is Not a Crime” y la Revalorización del Término "Hacker"](articulos/el-movimiento-hacking-is-not-a-crime-y-la-revalorizacion-del-termino-hacker.md)
 
 ## Academia Burp Suite
